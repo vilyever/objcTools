@@ -45,7 +45,6 @@ FOUNDATION_EXPORT const unsigned char objcToolsVersionString[];
 #import <objcTools/objcScrollView.h>
 #import <objcTools/objcSelectorArgument.h>
 #import <objcTools/objcSlider.h>
-#import <objcTools/objcSocketClient.h>
 #import <objcTools/objcString.h>
 #import <objcTools/objcTableView.h>
 #import <objcTools/objcTheme.h>
