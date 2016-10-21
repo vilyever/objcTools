@@ -10,6 +10,220 @@
 		D7DCC45C1DB9F53F0049E732 /* objcTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DCC4521DB9F53E0049E732 /* objcTools.framework */; };
 		D7DCC4611DB9F53F0049E732 /* objcToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4601DB9F53F0049E732 /* objcToolsTests.m */; };
 		D7DCC4631DB9F53F0049E732 /* objcTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4551DB9F53E0049E732 /* objcTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5A61DB9F6ED0049E732 /* objcApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4991DB9F6ED0049E732 /* objcApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5A71DB9F6ED0049E732 /* UIApplication+VDNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC49A1DB9F6ED0049E732 /* UIApplication+VDNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5A81DB9F6ED0049E732 /* UIApplication+VDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC49B1DB9F6ED0049E732 /* UIApplication+VDNotification.m */; };
+		D7DCC5A91DB9F6ED0049E732 /* UIApplication+VDStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC49C1DB9F6ED0049E732 /* UIApplication+VDStatusBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5AA1DB9F6ED0049E732 /* UIApplication+VDStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC49D1DB9F6ED0049E732 /* UIApplication+VDStatusBar.m */; };
+		D7DCC5AB1DB9F6ED0049E732 /* NSMutableArray+VDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC49F1DB9F6ED0049E732 /* NSMutableArray+VDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5AC1DB9F6ED0049E732 /* NSMutableArray+VDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4A01DB9F6ED0049E732 /* NSMutableArray+VDQueue.m */; };
+		D7DCC5AD1DB9F6ED0049E732 /* NSMutableArray+VDStack.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4A11DB9F6ED0049E732 /* NSMutableArray+VDStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5AE1DB9F6ED0049E732 /* NSMutableArray+VDStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4A21DB9F6ED0049E732 /* NSMutableArray+VDStack.m */; };
+		D7DCC5AF1DB9F6ED0049E732 /* objcArray.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4A31DB9F6ED0049E732 /* objcArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B01DB9F6ED0049E732 /* objcBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4A51DB9F6ED0049E732 /* objcBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B11DB9F6ED0049E732 /* objcCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4A71DB9F6ED0049E732 /* objcCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B21DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4A81DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B31DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4A91DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.m */; };
+		D7DCC5B41DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4AA1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B51DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4AB1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.m */; };
+		D7DCC5B61DB9F6ED0049E732 /* objcColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4AD1DB9F6ED0049E732 /* objcColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B71DB9F6ED0049E732 /* UIColor+VDChange.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4AE1DB9F6ED0049E732 /* UIColor+VDChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5B81DB9F6ED0049E732 /* UIColor+VDChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4AF1DB9F6ED0049E732 /* UIColor+VDChange.m */; };
+		D7DCC5B91DB9F6ED0049E732 /* UIColor+VDHex.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4B01DB9F6ED0049E732 /* UIColor+VDHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5BA1DB9F6ED0049E732 /* UIColor+VDHex.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4B11DB9F6ED0049E732 /* UIColor+VDHex.m */; };
+		D7DCC5BB1DB9F6ED0049E732 /* NSData+VDConcatenate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4B31DB9F6ED0049E732 /* NSData+VDConcatenate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5BC1DB9F6ED0049E732 /* NSData+VDConcatenate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4B41DB9F6ED0049E732 /* NSData+VDConcatenate.m */; };
+		D7DCC5BD1DB9F6ED0049E732 /* objcData.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4B51DB9F6ED0049E732 /* objcData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5BE1DB9F6ED0049E732 /* NSDate+VDString.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4B71DB9F6ED0049E732 /* NSDate+VDString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5BF1DB9F6ED0049E732 /* NSDate+VDString.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4B81DB9F6ED0049E732 /* NSDate+VDString.m */; };
+		D7DCC5C01DB9F6ED0049E732 /* objcDate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4B91DB9F6ED0049E732 /* objcDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5C11DB9F6ED0049E732 /* objcDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4BB1DB9F6ED0049E732 /* objcDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5C21DB9F6ED0049E732 /* NSDictionary+VDMerge.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4BD1DB9F6ED0049E732 /* NSDictionary+VDMerge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5C31DB9F6ED0049E732 /* NSDictionary+VDMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4BE1DB9F6ED0049E732 /* NSDictionary+VDMerge.m */; };
+		D7DCC5C41DB9F6ED0049E732 /* NSDictionary+VDReverse.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4BF1DB9F6ED0049E732 /* NSDictionary+VDReverse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5C51DB9F6ED0049E732 /* NSDictionary+VDReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4C01DB9F6ED0049E732 /* NSDictionary+VDReverse.m */; };
+		D7DCC5C61DB9F6ED0049E732 /* objcDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4C11DB9F6ED0049E732 /* objcDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5CD1DB9F6ED0049E732 /* objcFont.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4CB1DB9F6ED0049E732 /* objcFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5CE1DB9F6ED0049E732 /* UIFont+VDSize.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4CC1DB9F6ED0049E732 /* UIFont+VDSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5CF1DB9F6ED0049E732 /* UIFont+VDSize.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4CD1DB9F6ED0049E732 /* UIFont+VDSize.m */; };
+		D7DCC5D01DB9F6ED0049E732 /* NSObject+VDHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4CF1DB9F6ED0049E732 /* NSObject+VDHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5D11DB9F6ED0049E732 /* NSObject+VDHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4D01DB9F6ED0049E732 /* NSObject+VDHook.m */; };
+		D7DCC5D21DB9F6ED0049E732 /* objcHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4D11DB9F6ED0049E732 /* objcHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5D31DB9F6ED0049E732 /* VDHook.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4D21DB9F6ED0049E732 /* VDHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5D41DB9F6ED0049E732 /* VDHook.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4D31DB9F6ED0049E732 /* VDHook.m */; };
+		D7DCC5D51DB9F6ED0049E732 /* VDHookElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4D41DB9F6ED0049E732 /* VDHookElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5D61DB9F6ED0049E732 /* VDHookElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4D51DB9F6ED0049E732 /* VDHookElement.m */; };
+		D7DCC5D71DB9F6ED0049E732 /* VDHookInvocationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4D61DB9F6ED0049E732 /* VDHookInvocationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5D81DB9F6ED0049E732 /* VDHookInvocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4D71DB9F6ED0049E732 /* VDHookInvocationInfo.m */; };
+		D7DCC5D91DB9F6ED0049E732 /* VDHookRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4D81DB9F6ED0049E732 /* VDHookRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5DA1DB9F6ED0049E732 /* VDHookRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4D91DB9F6ED0049E732 /* VDHookRecorder.m */; };
+		D7DCC5E81DB9F6ED0049E732 /* objcImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4E91DB9F6ED0049E732 /* objcImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5E91DB9F6ED0049E732 /* UIImage+VDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4EA1DB9F6ED0049E732 /* UIImage+VDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5EA1DB9F6ED0049E732 /* UIImage+VDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4EB1DB9F6ED0049E732 /* UIImage+VDColor.m */; };
+		D7DCC5EB1DB9F6ED0049E732 /* UIImage+VDFile.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4EC1DB9F6ED0049E732 /* UIImage+VDFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5EC1DB9F6ED0049E732 /* UIImage+VDFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4ED1DB9F6ED0049E732 /* UIImage+VDFile.m */; };
+		D7DCC5ED1DB9F6ED0049E732 /* UIImage+VDOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4EE1DB9F6ED0049E732 /* UIImage+VDOrientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5EE1DB9F6ED0049E732 /* UIImage+VDOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4EF1DB9F6ED0049E732 /* UIImage+VDOrientation.m */; };
+		D7DCC5EF1DB9F6ED0049E732 /* UIImage+VDResize.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4F01DB9F6ED0049E732 /* UIImage+VDResize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F01DB9F6ED0049E732 /* UIImage+VDResize.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4F11DB9F6ED0049E732 /* UIImage+VDResize.m */; };
+		D7DCC5F11DB9F6ED0049E732 /* UIImage+VDView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4F21DB9F6ED0049E732 /* UIImage+VDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F21DB9F6ED0049E732 /* UIImage+VDView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4F31DB9F6ED0049E732 /* UIImage+VDView.m */; };
+		D7DCC5F31DB9F6ED0049E732 /* objcInput.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4F51DB9F6ED0049E732 /* objcInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F41DB9F6ED0049E732 /* UIView+VDAutoPanUp.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4F61DB9F6ED0049E732 /* UIView+VDAutoPanUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F51DB9F6ED0049E732 /* UIView+VDAutoPanUp.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4F71DB9F6ED0049E732 /* UIView+VDAutoPanUp.m */; };
+		D7DCC5F61DB9F6ED0049E732 /* UIView+VDInputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4F81DB9F6ED0049E732 /* UIView+VDInputManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F71DB9F6ED0049E732 /* UIView+VDInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4F91DB9F6ED0049E732 /* UIView+VDInputManager.m */; };
+		D7DCC5F81DB9F6ED0049E732 /* VDAutoPanUpElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4FA1DB9F6ED0049E732 /* VDAutoPanUpElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5F91DB9F6ED0049E732 /* VDAutoPanUpElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4FB1DB9F6ED0049E732 /* VDAutoPanUpElement.m */; };
+		D7DCC5FA1DB9F6ED0049E732 /* VDAutoPanUpManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4FC1DB9F6ED0049E732 /* VDAutoPanUpManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5FB1DB9F6ED0049E732 /* VDAutoPanUpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4FD1DB9F6ED0049E732 /* VDAutoPanUpManager.m */; };
+		D7DCC5FC1DB9F6ED0049E732 /* VDInputManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC4FE1DB9F6ED0049E732 /* VDInputManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5FD1DB9F6ED0049E732 /* VDInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC4FF1DB9F6ED0049E732 /* VDInputManager.m */; };
+		D7DCC5FE1DB9F6ED0049E732 /* objcJson.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5011DB9F6ED0049E732 /* objcJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC5FF1DB9F6ED0049E732 /* VDJsonObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5021DB9F6ED0049E732 /* VDJsonObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6001DB9F6ED0049E732 /* VDJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5031DB9F6ED0049E732 /* VDJsonObject.m */; };
+		D7DCC6011DB9F6ED0049E732 /* objcKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5051DB9F6ED0049E732 /* objcKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6021DB9F6ED0049E732 /* NSObject+VDKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5071DB9F6ED0049E732 /* NSObject+VDKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6031DB9F6ED0049E732 /* NSObject+VDKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5081DB9F6ED0049E732 /* NSObject+VDKVO.m */; };
+		D7DCC6041DB9F6ED0049E732 /* objcKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5091DB9F6ED0049E732 /* objcKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6051DB9F6ED0049E732 /* VDKVOChange.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC50A1DB9F6ED0049E732 /* VDKVOChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6061DB9F6ED0049E732 /* VDKVOChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC50B1DB9F6ED0049E732 /* VDKVOChange.m */; };
+		D7DCC6071DB9F6ED0049E732 /* VDKVOElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC50C1DB9F6ED0049E732 /* VDKVOElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6081DB9F6ED0049E732 /* VDKVOElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC50D1DB9F6ED0049E732 /* VDKVOElement.m */; };
+		D7DCC6091DB9F6ED0049E732 /* objcLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC50F1DB9F6ED0049E732 /* objcLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC60A1DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5101DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC60B1DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5111DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.m */; };
+		D7DCC60C1DB9F6ED0049E732 /* CALayer+VDShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5131DB9F6ED0049E732 /* CALayer+VDShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC60D1DB9F6ED0049E732 /* CALayer+VDShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5141DB9F6ED0049E732 /* CALayer+VDShadow.m */; };
+		D7DCC60E1DB9F6ED0049E732 /* objcLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5151DB9F6ED0049E732 /* objcLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC60F1DB9F6ED0049E732 /* objcLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5171DB9F6ED0049E732 /* objcLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6101DB9F6ED0049E732 /* VDLoadingAngularVariationView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5181DB9F6ED0049E732 /* VDLoadingAngularVariationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6111DB9F6ED0049E732 /* VDLoadingAngularVariationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5191DB9F6ED0049E732 /* VDLoadingAngularVariationView.m */; };
+		D7DCC6121DB9F6ED0049E732 /* VDLoadingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC51A1DB9F6ED0049E732 /* VDLoadingLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6131DB9F6ED0049E732 /* VDLoadingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC51B1DB9F6ED0049E732 /* VDLoadingLayer.m */; };
+		D7DCC6141DB9F6ED0049E732 /* VDLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC51C1DB9F6ED0049E732 /* VDLoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6151DB9F6ED0049E732 /* VDLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC51D1DB9F6ED0049E732 /* VDLoadingView.m */; };
+		D7DCC6161DB9F6ED0049E732 /* objcLog.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC51F1DB9F6ED0049E732 /* objcLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6171DB9F6ED0049E732 /* objcMath.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5211DB9F6ED0049E732 /* objcMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6181DB9F6ED0049E732 /* NSObject+VDNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5231DB9F6ED0049E732 /* NSObject+VDNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6191DB9F6ED0049E732 /* NSObject+VDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5241DB9F6ED0049E732 /* NSObject+VDNotification.m */; };
+		D7DCC61A1DB9F6ED0049E732 /* objcNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5251DB9F6ED0049E732 /* objcNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC61B1DB9F6ED0049E732 /* VDNotificationElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5261DB9F6ED0049E732 /* VDNotificationElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC61C1DB9F6ED0049E732 /* VDNotificationElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5271DB9F6ED0049E732 /* VDNotificationElement.m */; };
+		D7DCC61D1DB9F6ED0049E732 /* NSObject+VDClass.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5291DB9F6ED0049E732 /* NSObject+VDClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC61E1DB9F6ED0049E732 /* NSObject+VDClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC52A1DB9F6ED0049E732 /* NSObject+VDClass.m */; };
+		D7DCC61F1DB9F6ED0049E732 /* NSObject+VDPerform.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC52B1DB9F6ED0049E732 /* NSObject+VDPerform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6201DB9F6ED0049E732 /* NSObject+VDPerform.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC52C1DB9F6ED0049E732 /* NSObject+VDPerform.m */; };
+		D7DCC6211DB9F6ED0049E732 /* NSObject+VDSharedInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC52D1DB9F6ED0049E732 /* NSObject+VDSharedInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6221DB9F6ED0049E732 /* NSObject+VDSharedInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC52E1DB9F6ED0049E732 /* NSObject+VDSharedInstance.m */; };
+		D7DCC6231DB9F6ED0049E732 /* objcObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC52F1DB9F6ED0049E732 /* objcObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6241DB9F6ED0049E732 /* NSObject+VDProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5311DB9F6ED0049E732 /* NSObject+VDProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6251DB9F6ED0049E732 /* NSObject+VDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5321DB9F6ED0049E732 /* NSObject+VDProperty.m */; };
+		D7DCC6261DB9F6ED0049E732 /* objcProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5331DB9F6ED0049E732 /* objcProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6271DB9F6ED0049E732 /* VDProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5341DB9F6ED0049E732 /* VDProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6281DB9F6ED0049E732 /* VDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5351DB9F6ED0049E732 /* VDProperty.m */; };
+		D7DCC6321DB9F6ED0049E732 /* objcRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5411DB9F6ED0049E732 /* objcRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6331DB9F6ED0049E732 /* UIViewController+VDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5421DB9F6ED0049E732 /* UIViewController+VDRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6341DB9F6ED0049E732 /* UIViewController+VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5431DB9F6ED0049E732 /* UIViewController+VDRouter.m */; };
+		D7DCC6351DB9F6ED0049E732 /* VDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5441DB9F6ED0049E732 /* VDRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6361DB9F6ED0049E732 /* VDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5451DB9F6ED0049E732 /* VDRouter.m */; };
+		D7DCC6371DB9F6ED0049E732 /* VDRouterNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5461DB9F6ED0049E732 /* VDRouterNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6381DB9F6ED0049E732 /* VDRouterNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5471DB9F6ED0049E732 /* VDRouterNavigationController.m */; };
+		D7DCC6391DB9F6ED0049E732 /* objcScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5491DB9F6ED0049E732 /* objcScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC63A1DB9F6ED0049E732 /* UIScrollView+VDPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC54A1DB9F6ED0049E732 /* UIScrollView+VDPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC63B1DB9F6ED0049E732 /* UIScrollView+VDPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC54B1DB9F6ED0049E732 /* UIScrollView+VDPosition.m */; };
+		D7DCC63C1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC54D1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC63D1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC54E1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.m */; };
+		D7DCC63E1DB9F6ED0049E732 /* objcSelectorArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC54F1DB9F6ED0049E732 /* objcSelectorArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC63F1DB9F6ED0049E732 /* VDSelectorArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5501DB9F6ED0049E732 /* VDSelectorArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6401DB9F6ED0049E732 /* VDSelectorArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5511DB9F6ED0049E732 /* VDSelectorArgument.m */; };
+		D7DCC6411DB9F6ED0049E732 /* objcSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5531DB9F6ED0049E732 /* objcSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6421DB9F6ED0049E732 /* UISlider+VDTrackHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5541DB9F6ED0049E732 /* UISlider+VDTrackHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6431DB9F6ED0049E732 /* UISlider+VDTrackHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5551DB9F6ED0049E732 /* UISlider+VDTrackHeight.m */; };
+		D7DCC6441DB9F6ED0049E732 /* UISlider+VDValue.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5561DB9F6ED0049E732 /* UISlider+VDValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6451DB9F6ED0049E732 /* UISlider+VDValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5571DB9F6ED0049E732 /* UISlider+VDValue.m */; };
+		D7DCC6461DB9F6ED0049E732 /* NSString+Change.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5591DB9F6ED0049E732 /* NSString+Change.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6471DB9F6ED0049E732 /* NSString+Change.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC55A1DB9F6ED0049E732 /* NSString+Change.m */; };
+		D7DCC6481DB9F6ED0049E732 /* NSString+VDDate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC55B1DB9F6ED0049E732 /* NSString+VDDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6491DB9F6ED0049E732 /* NSString+VDDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC55C1DB9F6ED0049E732 /* NSString+VDDate.m */; };
+		D7DCC64A1DB9F6ED0049E732 /* NSString+VDEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC55D1DB9F6ED0049E732 /* NSString+VDEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC64B1DB9F6ED0049E732 /* NSString+VDEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC55E1DB9F6ED0049E732 /* NSString+VDEmpty.m */; };
+		D7DCC64C1DB9F6ED0049E732 /* NSString+VDRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC55F1DB9F6ED0049E732 /* NSString+VDRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC64D1DB9F6ED0049E732 /* NSString+VDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5601DB9F6ED0049E732 /* NSString+VDRegex.m */; };
+		D7DCC64E1DB9F6ED0049E732 /* NSString+VDUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5611DB9F6ED0049E732 /* NSString+VDUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC64F1DB9F6ED0049E732 /* NSString+VDUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5621DB9F6ED0049E732 /* NSString+VDUrl.m */; };
+		D7DCC6501DB9F6ED0049E732 /* NSString+VDValue.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5631DB9F6ED0049E732 /* NSString+VDValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6511DB9F6ED0049E732 /* NSString+VDValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5641DB9F6ED0049E732 /* NSString+VDValue.m */; };
+		D7DCC6521DB9F6ED0049E732 /* objcString.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5651DB9F6ED0049E732 /* objcString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6531DB9F6ED0049E732 /* objcTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5671DB9F6ED0049E732 /* objcTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6541DB9F6ED0049E732 /* UITableView+VDTouches.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5681DB9F6ED0049E732 /* UITableView+VDTouches.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6551DB9F6ED0049E732 /* UITableView+VDTouches.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5691DB9F6ED0049E732 /* UITableView+VDTouches.m */; };
+		D7DCC6561DB9F6ED0049E732 /* UITableViewCell+VDDequeue.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC56A1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6571DB9F6ED0049E732 /* UITableViewCell+VDDequeue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC56B1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.m */; };
+		D7DCC6581DB9F6ED0049E732 /* UITableViewCell+VDRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC56C1DB9F6ED0049E732 /* UITableViewCell+VDRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6591DB9F6ED0049E732 /* UITableViewCell+VDRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC56D1DB9F6ED0049E732 /* UITableViewCell+VDRegister.m */; };
+		D7DCC65A1DB9F6ED0049E732 /* NSObject+VDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC56F1DB9F6ED0049E732 /* NSObject+VDThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC65B1DB9F6ED0049E732 /* NSObject+VDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5701DB9F6ED0049E732 /* NSObject+VDThemeManager.m */; };
+		D7DCC65C1DB9F6ED0049E732 /* objcTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5711DB9F6ED0049E732 /* objcTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC65D1DB9F6ED0049E732 /* UIButton+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5721DB9F6ED0049E732 /* UIButton+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC65E1DB9F6ED0049E732 /* UIButton+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5731DB9F6ED0049E732 /* UIButton+VDTheme.m */; };
+		D7DCC65F1DB9F6ED0049E732 /* UIImageView+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5741DB9F6ED0049E732 /* UIImageView+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6601DB9F6ED0049E732 /* UIImageView+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5751DB9F6ED0049E732 /* UIImageView+VDTheme.m */; };
+		D7DCC6611DB9F6ED0049E732 /* UILabel+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5761DB9F6ED0049E732 /* UILabel+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6621DB9F6ED0049E732 /* UILabel+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5771DB9F6ED0049E732 /* UILabel+VDTheme.m */; };
+		D7DCC6631DB9F6ED0049E732 /* UINavigationBar+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5781DB9F6ED0049E732 /* UINavigationBar+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6641DB9F6ED0049E732 /* UINavigationBar+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5791DB9F6ED0049E732 /* UINavigationBar+VDTheme.m */; };
+		D7DCC6651DB9F6ED0049E732 /* UISlider+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC57A1DB9F6ED0049E732 /* UISlider+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6661DB9F6ED0049E732 /* UISlider+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC57B1DB9F6ED0049E732 /* UISlider+VDTheme.m */; };
+		D7DCC6671DB9F6ED0049E732 /* UIView+VDTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC57C1DB9F6ED0049E732 /* UIView+VDTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6681DB9F6ED0049E732 /* UIView+VDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC57D1DB9F6ED0049E732 /* UIView+VDTheme.m */; };
+		D7DCC6691DB9F6ED0049E732 /* VDThemeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC57E1DB9F6ED0049E732 /* VDThemeElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC66A1DB9F6ED0049E732 /* VDThemeElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC57F1DB9F6ED0049E732 /* VDThemeElement.m */; };
+		D7DCC66B1DB9F6ED0049E732 /* VDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5801DB9F6ED0049E732 /* VDThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC66C1DB9F6ED0049E732 /* VDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5811DB9F6ED0049E732 /* VDThemeManager.m */; };
+		D7DCC66D1DB9F6ED0049E732 /* VDThemeSelectorArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5821DB9F6ED0049E732 /* VDThemeSelectorArgument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC66E1DB9F6ED0049E732 /* VDThemeSelectorArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5831DB9F6ED0049E732 /* VDThemeSelectorArgument.m */; };
+		D7DCC66F1DB9F6ED0049E732 /* objcTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5851DB9F6ED0049E732 /* objcTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6701DB9F6ED0049E732 /* VDGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5861DB9F6ED0049E732 /* VDGCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6711DB9F6ED0049E732 /* VDGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5871DB9F6ED0049E732 /* VDGCDTimer.m */; };
+		D7DCC6721DB9F6ED0049E732 /* objcUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5891DB9F6ED0049E732 /* objcUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6731DB9F6ED0049E732 /* objcView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC58B1DB9F6ED0049E732 /* objcView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6741DB9F6ED0049E732 /* UIView+VDConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC58C1DB9F6ED0049E732 /* UIView+VDConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6751DB9F6ED0049E732 /* UIView+VDConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC58D1DB9F6ED0049E732 /* UIView+VDConstraint.m */; };
+		D7DCC6761DB9F6ED0049E732 /* UIView+VDFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC58E1DB9F6ED0049E732 /* UIView+VDFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6771DB9F6ED0049E732 /* UIView+VDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC58F1DB9F6ED0049E732 /* UIView+VDFrame.m */; };
+		D7DCC6781DB9F6ED0049E732 /* UIView+VDGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5901DB9F6ED0049E732 /* UIView+VDGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6791DB9F6ED0049E732 /* UIView+VDGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5911DB9F6ED0049E732 /* UIView+VDGesture.m */; };
+		D7DCC67A1DB9F6ED0049E732 /* UIView+VDInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5921DB9F6ED0049E732 /* UIView+VDInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC67B1DB9F6ED0049E732 /* UIView+VDInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5931DB9F6ED0049E732 /* UIView+VDInstance.m */; };
+		D7DCC67C1DB9F6ED0049E732 /* UIView+VDSubview.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5941DB9F6ED0049E732 /* UIView+VDSubview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC67D1DB9F6ED0049E732 /* UIView+VDSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5951DB9F6ED0049E732 /* UIView+VDSubview.m */; };
+		D7DCC67E1DB9F6ED0049E732 /* objcViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5971DB9F6ED0049E732 /* objcViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC67F1DB9F6ED0049E732 /* UIViewController+VDHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5981DB9F6ED0049E732 /* UIViewController+VDHierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6801DB9F6ED0049E732 /* UIViewController+VDHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5991DB9F6ED0049E732 /* UIViewController+VDHierarchy.m */; };
+		D7DCC6811DB9F6ED0049E732 /* UIViewController+VDInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC59A1DB9F6ED0049E732 /* UIViewController+VDInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6821DB9F6ED0049E732 /* UIViewController+VDInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC59B1DB9F6ED0049E732 /* UIViewController+VDInstance.m */; };
+		D7DCC6831DB9F6ED0049E732 /* UIViewController+VDPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC59C1DB9F6ED0049E732 /* UIViewController+VDPresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6841DB9F6ED0049E732 /* UIViewController+VDPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC59D1DB9F6ED0049E732 /* UIViewController+VDPresent.m */; };
+		D7DCC6851DB9F6ED0049E732 /* UIViewController+VDViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC59E1DB9F6ED0049E732 /* UIViewController+VDViewState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6861DB9F6ED0049E732 /* UIViewController+VDViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC59F1DB9F6ED0049E732 /* UIViewController+VDViewState.m */; };
+		D7DCC6871DB9F6ED0049E732 /* objcWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5A11DB9F6ED0049E732 /* objcWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6881DB9F6ED0049E732 /* VDWeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5A21DB9F6ED0049E732 /* VDWeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6891DB9F6ED0049E732 /* VDWeakRef.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC5A31DB9F6ED0049E732 /* VDWeakRef.m */; };
+		D7DCC68A1DB9F6ED0049E732 /* objcWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC5A51DB9F6ED0049E732 /* objcWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6B41DB9F9290049E732 /* objcHud.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6A71DB9F9290049E732 /* objcHud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6B51DB9F9290049E732 /* UIView+VDHud.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6A81DB9F9290049E732 /* UIView+VDHud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6B61DB9F9290049E732 /* UIView+VDHud.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6A91DB9F9290049E732 /* UIView+VDHud.m */; };
+		D7DCC6B71DB9F9290049E732 /* UIViewController+VDHud.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6AA1DB9F9290049E732 /* UIViewController+VDHud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6B81DB9F9290049E732 /* UIViewController+VDHud.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6AB1DB9F9290049E732 /* UIViewController+VDHud.m */; };
+		D7DCC6B91DB9F9290049E732 /* VDHudMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6AC1DB9F9290049E732 /* VDHudMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6BA1DB9F9290049E732 /* VDHudMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6AD1DB9F9290049E732 /* VDHudMaskView.m */; };
+		D7DCC6BB1DB9F9290049E732 /* VDHudViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6AE1DB9F9290049E732 /* VDHudViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6BC1DB9F9290049E732 /* VDHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6AF1DB9F9290049E732 /* VDHudViewController.m */; };
+		D7DCC6BD1DB9F9290049E732 /* VDSimpleHudViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6B01DB9F9290049E732 /* VDSimpleHudViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6BE1DB9F9290049E732 /* VDSimpleHudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6B11DB9F9290049E732 /* VDSimpleHudViewController.m */; };
+		D7DCC6BF1DB9F9290049E732 /* VDToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7DCC6B21DB9F9290049E732 /* VDToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCC6C01DB9F9290049E732 /* VDToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DCC6B31DB9F9290049E732 /* VDToastView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +243,220 @@
 		D7DCC45B1DB9F53F0049E732 /* objcToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DCC4601DB9F53F0049E732 /* objcToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcToolsTests.m; sourceTree = "<group>"; };
 		D7DCC4621DB9F53F0049E732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DCC4991DB9F6ED0049E732 /* objcApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcApplication.h; sourceTree = "<group>"; };
+		D7DCC49A1DB9F6ED0049E732 /* UIApplication+VDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+VDNotification.h"; sourceTree = "<group>"; };
+		D7DCC49B1DB9F6ED0049E732 /* UIApplication+VDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+VDNotification.m"; sourceTree = "<group>"; };
+		D7DCC49C1DB9F6ED0049E732 /* UIApplication+VDStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+VDStatusBar.h"; sourceTree = "<group>"; };
+		D7DCC49D1DB9F6ED0049E732 /* UIApplication+VDStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+VDStatusBar.m"; sourceTree = "<group>"; };
+		D7DCC49F1DB9F6ED0049E732 /* NSMutableArray+VDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+VDQueue.h"; sourceTree = "<group>"; };
+		D7DCC4A01DB9F6ED0049E732 /* NSMutableArray+VDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+VDQueue.m"; sourceTree = "<group>"; };
+		D7DCC4A11DB9F6ED0049E732 /* NSMutableArray+VDStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+VDStack.h"; sourceTree = "<group>"; };
+		D7DCC4A21DB9F6ED0049E732 /* NSMutableArray+VDStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+VDStack.m"; sourceTree = "<group>"; };
+		D7DCC4A31DB9F6ED0049E732 /* objcArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcArray.h; sourceTree = "<group>"; };
+		D7DCC4A51DB9F6ED0049E732 /* objcBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcBlock.h; sourceTree = "<group>"; };
+		D7DCC4A71DB9F6ED0049E732 /* objcCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcCollectionView.h; sourceTree = "<group>"; };
+		D7DCC4A81DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+VDDequeue.h"; sourceTree = "<group>"; };
+		D7DCC4A91DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+VDDequeue.m"; sourceTree = "<group>"; };
+		D7DCC4AA1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+VDRegister.h"; sourceTree = "<group>"; };
+		D7DCC4AB1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+VDRegister.m"; sourceTree = "<group>"; };
+		D7DCC4AD1DB9F6ED0049E732 /* objcColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcColor.h; sourceTree = "<group>"; };
+		D7DCC4AE1DB9F6ED0049E732 /* UIColor+VDChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDChange.h"; sourceTree = "<group>"; };
+		D7DCC4AF1DB9F6ED0049E732 /* UIColor+VDChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDChange.m"; sourceTree = "<group>"; };
+		D7DCC4B01DB9F6ED0049E732 /* UIColor+VDHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VDHex.h"; sourceTree = "<group>"; };
+		D7DCC4B11DB9F6ED0049E732 /* UIColor+VDHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VDHex.m"; sourceTree = "<group>"; };
+		D7DCC4B31DB9F6ED0049E732 /* NSData+VDConcatenate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+VDConcatenate.h"; sourceTree = "<group>"; };
+		D7DCC4B41DB9F6ED0049E732 /* NSData+VDConcatenate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+VDConcatenate.m"; sourceTree = "<group>"; };
+		D7DCC4B51DB9F6ED0049E732 /* objcData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcData.h; sourceTree = "<group>"; };
+		D7DCC4B71DB9F6ED0049E732 /* NSDate+VDString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+VDString.h"; sourceTree = "<group>"; };
+		D7DCC4B81DB9F6ED0049E732 /* NSDate+VDString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+VDString.m"; sourceTree = "<group>"; };
+		D7DCC4B91DB9F6ED0049E732 /* objcDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcDate.h; sourceTree = "<group>"; };
+		D7DCC4BB1DB9F6ED0049E732 /* objcDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcDevice.h; sourceTree = "<group>"; };
+		D7DCC4BD1DB9F6ED0049E732 /* NSDictionary+VDMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+VDMerge.h"; sourceTree = "<group>"; };
+		D7DCC4BE1DB9F6ED0049E732 /* NSDictionary+VDMerge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+VDMerge.m"; sourceTree = "<group>"; };
+		D7DCC4BF1DB9F6ED0049E732 /* NSDictionary+VDReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+VDReverse.h"; sourceTree = "<group>"; };
+		D7DCC4C01DB9F6ED0049E732 /* NSDictionary+VDReverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+VDReverse.m"; sourceTree = "<group>"; };
+		D7DCC4C11DB9F6ED0049E732 /* objcDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcDictionary.h; sourceTree = "<group>"; };
+		D7DCC4CB1DB9F6ED0049E732 /* objcFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcFont.h; sourceTree = "<group>"; };
+		D7DCC4CC1DB9F6ED0049E732 /* UIFont+VDSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+VDSize.h"; sourceTree = "<group>"; };
+		D7DCC4CD1DB9F6ED0049E732 /* UIFont+VDSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+VDSize.m"; sourceTree = "<group>"; };
+		D7DCC4CF1DB9F6ED0049E732 /* NSObject+VDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDHook.h"; sourceTree = "<group>"; };
+		D7DCC4D01DB9F6ED0049E732 /* NSObject+VDHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDHook.m"; sourceTree = "<group>"; };
+		D7DCC4D11DB9F6ED0049E732 /* objcHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcHook.h; sourceTree = "<group>"; };
+		D7DCC4D21DB9F6ED0049E732 /* VDHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHook.h; sourceTree = "<group>"; };
+		D7DCC4D31DB9F6ED0049E732 /* VDHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHook.m; sourceTree = "<group>"; };
+		D7DCC4D41DB9F6ED0049E732 /* VDHookElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookElement.h; sourceTree = "<group>"; };
+		D7DCC4D51DB9F6ED0049E732 /* VDHookElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookElement.m; sourceTree = "<group>"; };
+		D7DCC4D61DB9F6ED0049E732 /* VDHookInvocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookInvocationInfo.h; sourceTree = "<group>"; };
+		D7DCC4D71DB9F6ED0049E732 /* VDHookInvocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookInvocationInfo.m; sourceTree = "<group>"; };
+		D7DCC4D81DB9F6ED0049E732 /* VDHookRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHookRecorder.h; sourceTree = "<group>"; };
+		D7DCC4D91DB9F6ED0049E732 /* VDHookRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHookRecorder.m; sourceTree = "<group>"; };
+		D7DCC4E91DB9F6ED0049E732 /* objcImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcImage.h; sourceTree = "<group>"; };
+		D7DCC4EA1DB9F6ED0049E732 /* UIImage+VDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDColor.h"; sourceTree = "<group>"; };
+		D7DCC4EB1DB9F6ED0049E732 /* UIImage+VDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDColor.m"; sourceTree = "<group>"; };
+		D7DCC4EC1DB9F6ED0049E732 /* UIImage+VDFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDFile.h"; sourceTree = "<group>"; };
+		D7DCC4ED1DB9F6ED0049E732 /* UIImage+VDFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDFile.m"; sourceTree = "<group>"; };
+		D7DCC4EE1DB9F6ED0049E732 /* UIImage+VDOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDOrientation.h"; sourceTree = "<group>"; };
+		D7DCC4EF1DB9F6ED0049E732 /* UIImage+VDOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDOrientation.m"; sourceTree = "<group>"; };
+		D7DCC4F01DB9F6ED0049E732 /* UIImage+VDResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDResize.h"; sourceTree = "<group>"; };
+		D7DCC4F11DB9F6ED0049E732 /* UIImage+VDResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDResize.m"; sourceTree = "<group>"; };
+		D7DCC4F21DB9F6ED0049E732 /* UIImage+VDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VDView.h"; sourceTree = "<group>"; };
+		D7DCC4F31DB9F6ED0049E732 /* UIImage+VDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VDView.m"; sourceTree = "<group>"; };
+		D7DCC4F51DB9F6ED0049E732 /* objcInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcInput.h; sourceTree = "<group>"; };
+		D7DCC4F61DB9F6ED0049E732 /* UIView+VDAutoPanUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDAutoPanUp.h"; sourceTree = "<group>"; };
+		D7DCC4F71DB9F6ED0049E732 /* UIView+VDAutoPanUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDAutoPanUp.m"; sourceTree = "<group>"; };
+		D7DCC4F81DB9F6ED0049E732 /* UIView+VDInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDInputManager.h"; sourceTree = "<group>"; };
+		D7DCC4F91DB9F6ED0049E732 /* UIView+VDInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDInputManager.m"; sourceTree = "<group>"; };
+		D7DCC4FA1DB9F6ED0049E732 /* VDAutoPanUpElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDAutoPanUpElement.h; sourceTree = "<group>"; };
+		D7DCC4FB1DB9F6ED0049E732 /* VDAutoPanUpElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDAutoPanUpElement.m; sourceTree = "<group>"; };
+		D7DCC4FC1DB9F6ED0049E732 /* VDAutoPanUpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDAutoPanUpManager.h; sourceTree = "<group>"; };
+		D7DCC4FD1DB9F6ED0049E732 /* VDAutoPanUpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDAutoPanUpManager.m; sourceTree = "<group>"; };
+		D7DCC4FE1DB9F6ED0049E732 /* VDInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDInputManager.h; sourceTree = "<group>"; };
+		D7DCC4FF1DB9F6ED0049E732 /* VDInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDInputManager.m; sourceTree = "<group>"; };
+		D7DCC5011DB9F6ED0049E732 /* objcJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcJson.h; sourceTree = "<group>"; };
+		D7DCC5021DB9F6ED0049E732 /* VDJsonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDJsonObject.h; sourceTree = "<group>"; };
+		D7DCC5031DB9F6ED0049E732 /* VDJsonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDJsonObject.m; sourceTree = "<group>"; };
+		D7DCC5051DB9F6ED0049E732 /* objcKeyPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcKeyPath.h; sourceTree = "<group>"; };
+		D7DCC5071DB9F6ED0049E732 /* NSObject+VDKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDKVO.h"; sourceTree = "<group>"; };
+		D7DCC5081DB9F6ED0049E732 /* NSObject+VDKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDKVO.m"; sourceTree = "<group>"; };
+		D7DCC5091DB9F6ED0049E732 /* objcKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcKVO.h; sourceTree = "<group>"; };
+		D7DCC50A1DB9F6ED0049E732 /* VDKVOChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKVOChange.h; sourceTree = "<group>"; };
+		D7DCC50B1DB9F6ED0049E732 /* VDKVOChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKVOChange.m; sourceTree = "<group>"; };
+		D7DCC50C1DB9F6ED0049E732 /* VDKVOElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKVOElement.h; sourceTree = "<group>"; };
+		D7DCC50D1DB9F6ED0049E732 /* VDKVOElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKVOElement.m; sourceTree = "<group>"; };
+		D7DCC50F1DB9F6ED0049E732 /* objcLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcLabel.h; sourceTree = "<group>"; };
+		D7DCC5101DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VDVerticalAlignment.h"; sourceTree = "<group>"; };
+		D7DCC5111DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VDVerticalAlignment.m"; sourceTree = "<group>"; };
+		D7DCC5131DB9F6ED0049E732 /* CALayer+VDShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+VDShadow.h"; sourceTree = "<group>"; };
+		D7DCC5141DB9F6ED0049E732 /* CALayer+VDShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+VDShadow.m"; sourceTree = "<group>"; };
+		D7DCC5151DB9F6ED0049E732 /* objcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcLayer.h; sourceTree = "<group>"; };
+		D7DCC5171DB9F6ED0049E732 /* objcLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcLoading.h; sourceTree = "<group>"; };
+		D7DCC5181DB9F6ED0049E732 /* VDLoadingAngularVariationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoadingAngularVariationView.h; sourceTree = "<group>"; };
+		D7DCC5191DB9F6ED0049E732 /* VDLoadingAngularVariationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLoadingAngularVariationView.m; sourceTree = "<group>"; };
+		D7DCC51A1DB9F6ED0049E732 /* VDLoadingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoadingLayer.h; sourceTree = "<group>"; };
+		D7DCC51B1DB9F6ED0049E732 /* VDLoadingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLoadingLayer.m; sourceTree = "<group>"; };
+		D7DCC51C1DB9F6ED0049E732 /* VDLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLoadingView.h; sourceTree = "<group>"; };
+		D7DCC51D1DB9F6ED0049E732 /* VDLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLoadingView.m; sourceTree = "<group>"; };
+		D7DCC51F1DB9F6ED0049E732 /* objcLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcLog.h; sourceTree = "<group>"; };
+		D7DCC5211DB9F6ED0049E732 /* objcMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcMath.h; sourceTree = "<group>"; };
+		D7DCC5231DB9F6ED0049E732 /* NSObject+VDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDNotification.h"; sourceTree = "<group>"; };
+		D7DCC5241DB9F6ED0049E732 /* NSObject+VDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDNotification.m"; sourceTree = "<group>"; };
+		D7DCC5251DB9F6ED0049E732 /* objcNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcNotificationCenter.h; sourceTree = "<group>"; };
+		D7DCC5261DB9F6ED0049E732 /* VDNotificationElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDNotificationElement.h; sourceTree = "<group>"; };
+		D7DCC5271DB9F6ED0049E732 /* VDNotificationElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDNotificationElement.m; sourceTree = "<group>"; };
+		D7DCC5291DB9F6ED0049E732 /* NSObject+VDClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDClass.h"; sourceTree = "<group>"; };
+		D7DCC52A1DB9F6ED0049E732 /* NSObject+VDClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDClass.m"; sourceTree = "<group>"; };
+		D7DCC52B1DB9F6ED0049E732 /* NSObject+VDPerform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDPerform.h"; sourceTree = "<group>"; };
+		D7DCC52C1DB9F6ED0049E732 /* NSObject+VDPerform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDPerform.m"; sourceTree = "<group>"; };
+		D7DCC52D1DB9F6ED0049E732 /* NSObject+VDSharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDSharedInstance.h"; sourceTree = "<group>"; };
+		D7DCC52E1DB9F6ED0049E732 /* NSObject+VDSharedInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDSharedInstance.m"; sourceTree = "<group>"; };
+		D7DCC52F1DB9F6ED0049E732 /* objcObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcObject.h; sourceTree = "<group>"; };
+		D7DCC5311DB9F6ED0049E732 /* NSObject+VDProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDProperty.h"; sourceTree = "<group>"; };
+		D7DCC5321DB9F6ED0049E732 /* NSObject+VDProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDProperty.m"; sourceTree = "<group>"; };
+		D7DCC5331DB9F6ED0049E732 /* objcProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcProperty.h; sourceTree = "<group>"; };
+		D7DCC5341DB9F6ED0049E732 /* VDProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDProperty.h; sourceTree = "<group>"; };
+		D7DCC5351DB9F6ED0049E732 /* VDProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDProperty.m; sourceTree = "<group>"; };
+		D7DCC5411DB9F6ED0049E732 /* objcRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcRouter.h; sourceTree = "<group>"; };
+		D7DCC5421DB9F6ED0049E732 /* UIViewController+VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDRouter.h"; sourceTree = "<group>"; };
+		D7DCC5431DB9F6ED0049E732 /* UIViewController+VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDRouter.m"; sourceTree = "<group>"; };
+		D7DCC5441DB9F6ED0049E732 /* VDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouter.h; sourceTree = "<group>"; };
+		D7DCC5451DB9F6ED0049E732 /* VDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouter.m; sourceTree = "<group>"; };
+		D7DCC5461DB9F6ED0049E732 /* VDRouterNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDRouterNavigationController.h; sourceTree = "<group>"; };
+		D7DCC5471DB9F6ED0049E732 /* VDRouterNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDRouterNavigationController.m; sourceTree = "<group>"; };
+		D7DCC5491DB9F6ED0049E732 /* objcScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcScrollView.h; sourceTree = "<group>"; };
+		D7DCC54A1DB9F6ED0049E732 /* UIScrollView+VDPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+VDPosition.h"; sourceTree = "<group>"; };
+		D7DCC54B1DB9F6ED0049E732 /* UIScrollView+VDPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+VDPosition.m"; sourceTree = "<group>"; };
+		D7DCC54D1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDSelectorArgument.h"; sourceTree = "<group>"; };
+		D7DCC54E1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDSelectorArgument.m"; sourceTree = "<group>"; };
+		D7DCC54F1DB9F6ED0049E732 /* objcSelectorArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcSelectorArgument.h; sourceTree = "<group>"; };
+		D7DCC5501DB9F6ED0049E732 /* VDSelectorArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSelectorArgument.h; sourceTree = "<group>"; };
+		D7DCC5511DB9F6ED0049E732 /* VDSelectorArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDSelectorArgument.m; sourceTree = "<group>"; };
+		D7DCC5531DB9F6ED0049E732 /* objcSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcSlider.h; sourceTree = "<group>"; };
+		D7DCC5541DB9F6ED0049E732 /* UISlider+VDTrackHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+VDTrackHeight.h"; sourceTree = "<group>"; };
+		D7DCC5551DB9F6ED0049E732 /* UISlider+VDTrackHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+VDTrackHeight.m"; sourceTree = "<group>"; };
+		D7DCC5561DB9F6ED0049E732 /* UISlider+VDValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+VDValue.h"; sourceTree = "<group>"; };
+		D7DCC5571DB9F6ED0049E732 /* UISlider+VDValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+VDValue.m"; sourceTree = "<group>"; };
+		D7DCC5591DB9F6ED0049E732 /* NSString+Change.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Change.h"; sourceTree = "<group>"; };
+		D7DCC55A1DB9F6ED0049E732 /* NSString+Change.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Change.m"; sourceTree = "<group>"; };
+		D7DCC55B1DB9F6ED0049E732 /* NSString+VDDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDDate.h"; sourceTree = "<group>"; };
+		D7DCC55C1DB9F6ED0049E732 /* NSString+VDDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDDate.m"; sourceTree = "<group>"; };
+		D7DCC55D1DB9F6ED0049E732 /* NSString+VDEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDEmpty.h"; sourceTree = "<group>"; };
+		D7DCC55E1DB9F6ED0049E732 /* NSString+VDEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDEmpty.m"; sourceTree = "<group>"; };
+		D7DCC55F1DB9F6ED0049E732 /* NSString+VDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDRegex.h"; sourceTree = "<group>"; };
+		D7DCC5601DB9F6ED0049E732 /* NSString+VDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDRegex.m"; sourceTree = "<group>"; };
+		D7DCC5611DB9F6ED0049E732 /* NSString+VDUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDUrl.h"; sourceTree = "<group>"; };
+		D7DCC5621DB9F6ED0049E732 /* NSString+VDUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDUrl.m"; sourceTree = "<group>"; };
+		D7DCC5631DB9F6ED0049E732 /* NSString+VDValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VDValue.h"; sourceTree = "<group>"; };
+		D7DCC5641DB9F6ED0049E732 /* NSString+VDValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VDValue.m"; sourceTree = "<group>"; };
+		D7DCC5651DB9F6ED0049E732 /* objcString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcString.h; sourceTree = "<group>"; };
+		D7DCC5671DB9F6ED0049E732 /* objcTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcTableView.h; sourceTree = "<group>"; };
+		D7DCC5681DB9F6ED0049E732 /* UITableView+VDTouches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+VDTouches.h"; sourceTree = "<group>"; };
+		D7DCC5691DB9F6ED0049E732 /* UITableView+VDTouches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+VDTouches.m"; sourceTree = "<group>"; };
+		D7DCC56A1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VDDequeue.h"; sourceTree = "<group>"; };
+		D7DCC56B1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VDDequeue.m"; sourceTree = "<group>"; };
+		D7DCC56C1DB9F6ED0049E732 /* UITableViewCell+VDRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+VDRegister.h"; sourceTree = "<group>"; };
+		D7DCC56D1DB9F6ED0049E732 /* UITableViewCell+VDRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+VDRegister.m"; sourceTree = "<group>"; };
+		D7DCC56F1DB9F6ED0049E732 /* NSObject+VDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDThemeManager.h"; sourceTree = "<group>"; };
+		D7DCC5701DB9F6ED0049E732 /* NSObject+VDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDThemeManager.m"; sourceTree = "<group>"; };
+		D7DCC5711DB9F6ED0049E732 /* objcTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcTheme.h; sourceTree = "<group>"; };
+		D7DCC5721DB9F6ED0049E732 /* UIButton+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC5731DB9F6ED0049E732 /* UIButton+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC5741DB9F6ED0049E732 /* UIImageView+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC5751DB9F6ED0049E732 /* UIImageView+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC5761DB9F6ED0049E732 /* UILabel+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC5771DB9F6ED0049E732 /* UILabel+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC5781DB9F6ED0049E732 /* UINavigationBar+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC5791DB9F6ED0049E732 /* UINavigationBar+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC57A1DB9F6ED0049E732 /* UISlider+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC57B1DB9F6ED0049E732 /* UISlider+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC57C1DB9F6ED0049E732 /* UIView+VDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDTheme.h"; sourceTree = "<group>"; };
+		D7DCC57D1DB9F6ED0049E732 /* UIView+VDTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDTheme.m"; sourceTree = "<group>"; };
+		D7DCC57E1DB9F6ED0049E732 /* VDThemeElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDThemeElement.h; sourceTree = "<group>"; };
+		D7DCC57F1DB9F6ED0049E732 /* VDThemeElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDThemeElement.m; sourceTree = "<group>"; };
+		D7DCC5801DB9F6ED0049E732 /* VDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDThemeManager.h; sourceTree = "<group>"; };
+		D7DCC5811DB9F6ED0049E732 /* VDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDThemeManager.m; sourceTree = "<group>"; };
+		D7DCC5821DB9F6ED0049E732 /* VDThemeSelectorArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDThemeSelectorArgument.h; sourceTree = "<group>"; };
+		D7DCC5831DB9F6ED0049E732 /* VDThemeSelectorArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDThemeSelectorArgument.m; sourceTree = "<group>"; };
+		D7DCC5851DB9F6ED0049E732 /* objcTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcTimer.h; sourceTree = "<group>"; };
+		D7DCC5861DB9F6ED0049E732 /* VDGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDGCDTimer.h; sourceTree = "<group>"; };
+		D7DCC5871DB9F6ED0049E732 /* VDGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDGCDTimer.m; sourceTree = "<group>"; };
+		D7DCC5891DB9F6ED0049E732 /* objcUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcUserDefaults.h; sourceTree = "<group>"; };
+		D7DCC58B1DB9F6ED0049E732 /* objcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcView.h; sourceTree = "<group>"; };
+		D7DCC58C1DB9F6ED0049E732 /* UIView+VDConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDConstraint.h"; sourceTree = "<group>"; };
+		D7DCC58D1DB9F6ED0049E732 /* UIView+VDConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDConstraint.m"; sourceTree = "<group>"; };
+		D7DCC58E1DB9F6ED0049E732 /* UIView+VDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDFrame.h"; sourceTree = "<group>"; };
+		D7DCC58F1DB9F6ED0049E732 /* UIView+VDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDFrame.m"; sourceTree = "<group>"; };
+		D7DCC5901DB9F6ED0049E732 /* UIView+VDGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDGesture.h"; sourceTree = "<group>"; };
+		D7DCC5911DB9F6ED0049E732 /* UIView+VDGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDGesture.m"; sourceTree = "<group>"; };
+		D7DCC5921DB9F6ED0049E732 /* UIView+VDInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDInstance.h"; sourceTree = "<group>"; };
+		D7DCC5931DB9F6ED0049E732 /* UIView+VDInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDInstance.m"; sourceTree = "<group>"; };
+		D7DCC5941DB9F6ED0049E732 /* UIView+VDSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDSubview.h"; sourceTree = "<group>"; };
+		D7DCC5951DB9F6ED0049E732 /* UIView+VDSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDSubview.m"; sourceTree = "<group>"; };
+		D7DCC5971DB9F6ED0049E732 /* objcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcViewController.h; sourceTree = "<group>"; };
+		D7DCC5981DB9F6ED0049E732 /* UIViewController+VDHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDHierarchy.h"; sourceTree = "<group>"; };
+		D7DCC5991DB9F6ED0049E732 /* UIViewController+VDHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDHierarchy.m"; sourceTree = "<group>"; };
+		D7DCC59A1DB9F6ED0049E732 /* UIViewController+VDInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDInstance.h"; sourceTree = "<group>"; };
+		D7DCC59B1DB9F6ED0049E732 /* UIViewController+VDInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDInstance.m"; sourceTree = "<group>"; };
+		D7DCC59C1DB9F6ED0049E732 /* UIViewController+VDPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDPresent.h"; sourceTree = "<group>"; };
+		D7DCC59D1DB9F6ED0049E732 /* UIViewController+VDPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDPresent.m"; sourceTree = "<group>"; };
+		D7DCC59E1DB9F6ED0049E732 /* UIViewController+VDViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDViewState.h"; sourceTree = "<group>"; };
+		D7DCC59F1DB9F6ED0049E732 /* UIViewController+VDViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDViewState.m"; sourceTree = "<group>"; };
+		D7DCC5A11DB9F6ED0049E732 /* objcWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcWeakRef.h; sourceTree = "<group>"; };
+		D7DCC5A21DB9F6ED0049E732 /* VDWeakRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDWeakRef.h; sourceTree = "<group>"; };
+		D7DCC5A31DB9F6ED0049E732 /* VDWeakRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDWeakRef.m; sourceTree = "<group>"; };
+		D7DCC5A51DB9F6ED0049E732 /* objcWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcWindow.h; sourceTree = "<group>"; };
+		D7DCC6A71DB9F9290049E732 /* objcHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objcHud.h; sourceTree = "<group>"; };
+		D7DCC6A81DB9F9290049E732 /* UIView+VDHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VDHud.h"; sourceTree = "<group>"; };
+		D7DCC6A91DB9F9290049E732 /* UIView+VDHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VDHud.m"; sourceTree = "<group>"; };
+		D7DCC6AA1DB9F9290049E732 /* UIViewController+VDHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDHud.h"; sourceTree = "<group>"; };
+		D7DCC6AB1DB9F9290049E732 /* UIViewController+VDHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDHud.m"; sourceTree = "<group>"; };
+		D7DCC6AC1DB9F9290049E732 /* VDHudMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHudMaskView.h; sourceTree = "<group>"; };
+		D7DCC6AD1DB9F9290049E732 /* VDHudMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHudMaskView.m; sourceTree = "<group>"; };
+		D7DCC6AE1DB9F9290049E732 /* VDHudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDHudViewController.h; sourceTree = "<group>"; };
+		D7DCC6AF1DB9F9290049E732 /* VDHudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDHudViewController.m; sourceTree = "<group>"; };
+		D7DCC6B01DB9F9290049E732 /* VDSimpleHudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDSimpleHudViewController.h; sourceTree = "<group>"; };
+		D7DCC6B11DB9F9290049E732 /* VDSimpleHudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDSimpleHudViewController.m; sourceTree = "<group>"; };
+		D7DCC6B21DB9F9290049E732 /* VDToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDToastView.h; sourceTree = "<group>"; };
+		D7DCC6B31DB9F9290049E732 /* VDToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDToastView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +499,44 @@
 		D7DCC4541DB9F53E0049E732 /* objcTools */ = {
 			isa = PBXGroup;
 			children = (
+				D7DCC4981DB9F6ED0049E732 /* objcApplication */,
+				D7DCC49E1DB9F6ED0049E732 /* objcArray */,
+				D7DCC4A41DB9F6ED0049E732 /* objcBlock */,
+				D7DCC4A61DB9F6ED0049E732 /* objcCollectionView */,
+				D7DCC4AC1DB9F6ED0049E732 /* objcColor */,
+				D7DCC4B21DB9F6ED0049E732 /* objcData */,
+				D7DCC4B61DB9F6ED0049E732 /* objcDate */,
+				D7DCC4BA1DB9F6ED0049E732 /* objcDevice */,
+				D7DCC4BC1DB9F6ED0049E732 /* objcDictionary */,
+				D7DCC4CA1DB9F6ED0049E732 /* objcFont */,
+				D7DCC4CE1DB9F6ED0049E732 /* objcHook */,
+				D7DCC6A61DB9F9290049E732 /* objcHud */,
+				D7DCC4E81DB9F6ED0049E732 /* objcImage */,
+				D7DCC4F41DB9F6ED0049E732 /* objcInput */,
+				D7DCC5001DB9F6ED0049E732 /* objcJson */,
+				D7DCC5041DB9F6ED0049E732 /* objcKeyPath */,
+				D7DCC5061DB9F6ED0049E732 /* objcKVO */,
+				D7DCC50E1DB9F6ED0049E732 /* objcLabel */,
+				D7DCC5121DB9F6ED0049E732 /* objcLayer */,
+				D7DCC5161DB9F6ED0049E732 /* objcLoading */,
+				D7DCC51E1DB9F6ED0049E732 /* objcLog */,
+				D7DCC5201DB9F6ED0049E732 /* objcMath */,
+				D7DCC5221DB9F6ED0049E732 /* objcNotificationCenter */,
+				D7DCC5281DB9F6ED0049E732 /* objcObject */,
+				D7DCC5301DB9F6ED0049E732 /* objcProperty */,
+				D7DCC5401DB9F6ED0049E732 /* objcRouter */,
+				D7DCC5481DB9F6ED0049E732 /* objcScrollView */,
+				D7DCC54C1DB9F6ED0049E732 /* objcSelectorArgument */,
+				D7DCC5521DB9F6ED0049E732 /* objcSlider */,
+				D7DCC5581DB9F6ED0049E732 /* objcString */,
+				D7DCC5661DB9F6ED0049E732 /* objcTableView */,
+				D7DCC56E1DB9F6ED0049E732 /* objcTheme */,
+				D7DCC5841DB9F6ED0049E732 /* objcTimer */,
+				D7DCC5881DB9F6ED0049E732 /* objcUserDefaults */,
+				D7DCC58A1DB9F6ED0049E732 /* objcView */,
+				D7DCC5961DB9F6ED0049E732 /* objcViewController */,
+				D7DCC5A01DB9F6ED0049E732 /* objcWeakRef */,
+				D7DCC5A41DB9F6ED0049E732 /* objcWindow */,
 				D7DCC4551DB9F53E0049E732 /* objcTools.h */,
 				D7DCC4561DB9F53E0049E732 /* Info.plist */,
 			);
@@ -86,6 +552,486 @@
 			path = objcToolsTests;
 			sourceTree = "<group>";
 		};
+		D7DCC4981DB9F6ED0049E732 /* objcApplication */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4991DB9F6ED0049E732 /* objcApplication.h */,
+				D7DCC49A1DB9F6ED0049E732 /* UIApplication+VDNotification.h */,
+				D7DCC49B1DB9F6ED0049E732 /* UIApplication+VDNotification.m */,
+				D7DCC49C1DB9F6ED0049E732 /* UIApplication+VDStatusBar.h */,
+				D7DCC49D1DB9F6ED0049E732 /* UIApplication+VDStatusBar.m */,
+			);
+			path = objcApplication;
+			sourceTree = "<group>";
+		};
+		D7DCC49E1DB9F6ED0049E732 /* objcArray */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC49F1DB9F6ED0049E732 /* NSMutableArray+VDQueue.h */,
+				D7DCC4A01DB9F6ED0049E732 /* NSMutableArray+VDQueue.m */,
+				D7DCC4A11DB9F6ED0049E732 /* NSMutableArray+VDStack.h */,
+				D7DCC4A21DB9F6ED0049E732 /* NSMutableArray+VDStack.m */,
+				D7DCC4A31DB9F6ED0049E732 /* objcArray.h */,
+			);
+			path = objcArray;
+			sourceTree = "<group>";
+		};
+		D7DCC4A41DB9F6ED0049E732 /* objcBlock */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4A51DB9F6ED0049E732 /* objcBlock.h */,
+			);
+			path = objcBlock;
+			sourceTree = "<group>";
+		};
+		D7DCC4A61DB9F6ED0049E732 /* objcCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4A71DB9F6ED0049E732 /* objcCollectionView.h */,
+				D7DCC4A81DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.h */,
+				D7DCC4A91DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.m */,
+				D7DCC4AA1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.h */,
+				D7DCC4AB1DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.m */,
+			);
+			path = objcCollectionView;
+			sourceTree = "<group>";
+		};
+		D7DCC4AC1DB9F6ED0049E732 /* objcColor */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4AD1DB9F6ED0049E732 /* objcColor.h */,
+				D7DCC4AE1DB9F6ED0049E732 /* UIColor+VDChange.h */,
+				D7DCC4AF1DB9F6ED0049E732 /* UIColor+VDChange.m */,
+				D7DCC4B01DB9F6ED0049E732 /* UIColor+VDHex.h */,
+				D7DCC4B11DB9F6ED0049E732 /* UIColor+VDHex.m */,
+			);
+			path = objcColor;
+			sourceTree = "<group>";
+		};
+		D7DCC4B21DB9F6ED0049E732 /* objcData */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4B31DB9F6ED0049E732 /* NSData+VDConcatenate.h */,
+				D7DCC4B41DB9F6ED0049E732 /* NSData+VDConcatenate.m */,
+				D7DCC4B51DB9F6ED0049E732 /* objcData.h */,
+			);
+			path = objcData;
+			sourceTree = "<group>";
+		};
+		D7DCC4B61DB9F6ED0049E732 /* objcDate */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4B71DB9F6ED0049E732 /* NSDate+VDString.h */,
+				D7DCC4B81DB9F6ED0049E732 /* NSDate+VDString.m */,
+				D7DCC4B91DB9F6ED0049E732 /* objcDate.h */,
+			);
+			path = objcDate;
+			sourceTree = "<group>";
+		};
+		D7DCC4BA1DB9F6ED0049E732 /* objcDevice */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4BB1DB9F6ED0049E732 /* objcDevice.h */,
+			);
+			path = objcDevice;
+			sourceTree = "<group>";
+		};
+		D7DCC4BC1DB9F6ED0049E732 /* objcDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4BD1DB9F6ED0049E732 /* NSDictionary+VDMerge.h */,
+				D7DCC4BE1DB9F6ED0049E732 /* NSDictionary+VDMerge.m */,
+				D7DCC4BF1DB9F6ED0049E732 /* NSDictionary+VDReverse.h */,
+				D7DCC4C01DB9F6ED0049E732 /* NSDictionary+VDReverse.m */,
+				D7DCC4C11DB9F6ED0049E732 /* objcDictionary.h */,
+			);
+			path = objcDictionary;
+			sourceTree = "<group>";
+		};
+		D7DCC4CA1DB9F6ED0049E732 /* objcFont */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4CB1DB9F6ED0049E732 /* objcFont.h */,
+				D7DCC4CC1DB9F6ED0049E732 /* UIFont+VDSize.h */,
+				D7DCC4CD1DB9F6ED0049E732 /* UIFont+VDSize.m */,
+			);
+			path = objcFont;
+			sourceTree = "<group>";
+		};
+		D7DCC4CE1DB9F6ED0049E732 /* objcHook */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4CF1DB9F6ED0049E732 /* NSObject+VDHook.h */,
+				D7DCC4D01DB9F6ED0049E732 /* NSObject+VDHook.m */,
+				D7DCC4D11DB9F6ED0049E732 /* objcHook.h */,
+				D7DCC4D21DB9F6ED0049E732 /* VDHook.h */,
+				D7DCC4D31DB9F6ED0049E732 /* VDHook.m */,
+				D7DCC4D41DB9F6ED0049E732 /* VDHookElement.h */,
+				D7DCC4D51DB9F6ED0049E732 /* VDHookElement.m */,
+				D7DCC4D61DB9F6ED0049E732 /* VDHookInvocationInfo.h */,
+				D7DCC4D71DB9F6ED0049E732 /* VDHookInvocationInfo.m */,
+				D7DCC4D81DB9F6ED0049E732 /* VDHookRecorder.h */,
+				D7DCC4D91DB9F6ED0049E732 /* VDHookRecorder.m */,
+			);
+			path = objcHook;
+			sourceTree = "<group>";
+		};
+		D7DCC4E81DB9F6ED0049E732 /* objcImage */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4E91DB9F6ED0049E732 /* objcImage.h */,
+				D7DCC4EA1DB9F6ED0049E732 /* UIImage+VDColor.h */,
+				D7DCC4EB1DB9F6ED0049E732 /* UIImage+VDColor.m */,
+				D7DCC4EC1DB9F6ED0049E732 /* UIImage+VDFile.h */,
+				D7DCC4ED1DB9F6ED0049E732 /* UIImage+VDFile.m */,
+				D7DCC4EE1DB9F6ED0049E732 /* UIImage+VDOrientation.h */,
+				D7DCC4EF1DB9F6ED0049E732 /* UIImage+VDOrientation.m */,
+				D7DCC4F01DB9F6ED0049E732 /* UIImage+VDResize.h */,
+				D7DCC4F11DB9F6ED0049E732 /* UIImage+VDResize.m */,
+				D7DCC4F21DB9F6ED0049E732 /* UIImage+VDView.h */,
+				D7DCC4F31DB9F6ED0049E732 /* UIImage+VDView.m */,
+			);
+			path = objcImage;
+			sourceTree = "<group>";
+		};
+		D7DCC4F41DB9F6ED0049E732 /* objcInput */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC4F51DB9F6ED0049E732 /* objcInput.h */,
+				D7DCC4F61DB9F6ED0049E732 /* UIView+VDAutoPanUp.h */,
+				D7DCC4F71DB9F6ED0049E732 /* UIView+VDAutoPanUp.m */,
+				D7DCC4F81DB9F6ED0049E732 /* UIView+VDInputManager.h */,
+				D7DCC4F91DB9F6ED0049E732 /* UIView+VDInputManager.m */,
+				D7DCC4FA1DB9F6ED0049E732 /* VDAutoPanUpElement.h */,
+				D7DCC4FB1DB9F6ED0049E732 /* VDAutoPanUpElement.m */,
+				D7DCC4FC1DB9F6ED0049E732 /* VDAutoPanUpManager.h */,
+				D7DCC4FD1DB9F6ED0049E732 /* VDAutoPanUpManager.m */,
+				D7DCC4FE1DB9F6ED0049E732 /* VDInputManager.h */,
+				D7DCC4FF1DB9F6ED0049E732 /* VDInputManager.m */,
+			);
+			path = objcInput;
+			sourceTree = "<group>";
+		};
+		D7DCC5001DB9F6ED0049E732 /* objcJson */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5011DB9F6ED0049E732 /* objcJson.h */,
+				D7DCC5021DB9F6ED0049E732 /* VDJsonObject.h */,
+				D7DCC5031DB9F6ED0049E732 /* VDJsonObject.m */,
+			);
+			path = objcJson;
+			sourceTree = "<group>";
+		};
+		D7DCC5041DB9F6ED0049E732 /* objcKeyPath */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5051DB9F6ED0049E732 /* objcKeyPath.h */,
+			);
+			path = objcKeyPath;
+			sourceTree = "<group>";
+		};
+		D7DCC5061DB9F6ED0049E732 /* objcKVO */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5071DB9F6ED0049E732 /* NSObject+VDKVO.h */,
+				D7DCC5081DB9F6ED0049E732 /* NSObject+VDKVO.m */,
+				D7DCC5091DB9F6ED0049E732 /* objcKVO.h */,
+				D7DCC50A1DB9F6ED0049E732 /* VDKVOChange.h */,
+				D7DCC50B1DB9F6ED0049E732 /* VDKVOChange.m */,
+				D7DCC50C1DB9F6ED0049E732 /* VDKVOElement.h */,
+				D7DCC50D1DB9F6ED0049E732 /* VDKVOElement.m */,
+			);
+			path = objcKVO;
+			sourceTree = "<group>";
+		};
+		D7DCC50E1DB9F6ED0049E732 /* objcLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC50F1DB9F6ED0049E732 /* objcLabel.h */,
+				D7DCC5101DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.h */,
+				D7DCC5111DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.m */,
+			);
+			path = objcLabel;
+			sourceTree = "<group>";
+		};
+		D7DCC5121DB9F6ED0049E732 /* objcLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5131DB9F6ED0049E732 /* CALayer+VDShadow.h */,
+				D7DCC5141DB9F6ED0049E732 /* CALayer+VDShadow.m */,
+				D7DCC5151DB9F6ED0049E732 /* objcLayer.h */,
+			);
+			path = objcLayer;
+			sourceTree = "<group>";
+		};
+		D7DCC5161DB9F6ED0049E732 /* objcLoading */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5171DB9F6ED0049E732 /* objcLoading.h */,
+				D7DCC5181DB9F6ED0049E732 /* VDLoadingAngularVariationView.h */,
+				D7DCC5191DB9F6ED0049E732 /* VDLoadingAngularVariationView.m */,
+				D7DCC51A1DB9F6ED0049E732 /* VDLoadingLayer.h */,
+				D7DCC51B1DB9F6ED0049E732 /* VDLoadingLayer.m */,
+				D7DCC51C1DB9F6ED0049E732 /* VDLoadingView.h */,
+				D7DCC51D1DB9F6ED0049E732 /* VDLoadingView.m */,
+			);
+			path = objcLoading;
+			sourceTree = "<group>";
+		};
+		D7DCC51E1DB9F6ED0049E732 /* objcLog */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC51F1DB9F6ED0049E732 /* objcLog.h */,
+			);
+			path = objcLog;
+			sourceTree = "<group>";
+		};
+		D7DCC5201DB9F6ED0049E732 /* objcMath */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5211DB9F6ED0049E732 /* objcMath.h */,
+			);
+			path = objcMath;
+			sourceTree = "<group>";
+		};
+		D7DCC5221DB9F6ED0049E732 /* objcNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5231DB9F6ED0049E732 /* NSObject+VDNotification.h */,
+				D7DCC5241DB9F6ED0049E732 /* NSObject+VDNotification.m */,
+				D7DCC5251DB9F6ED0049E732 /* objcNotificationCenter.h */,
+				D7DCC5261DB9F6ED0049E732 /* VDNotificationElement.h */,
+				D7DCC5271DB9F6ED0049E732 /* VDNotificationElement.m */,
+			);
+			path = objcNotificationCenter;
+			sourceTree = "<group>";
+		};
+		D7DCC5281DB9F6ED0049E732 /* objcObject */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5291DB9F6ED0049E732 /* NSObject+VDClass.h */,
+				D7DCC52A1DB9F6ED0049E732 /* NSObject+VDClass.m */,
+				D7DCC52B1DB9F6ED0049E732 /* NSObject+VDPerform.h */,
+				D7DCC52C1DB9F6ED0049E732 /* NSObject+VDPerform.m */,
+				D7DCC52D1DB9F6ED0049E732 /* NSObject+VDSharedInstance.h */,
+				D7DCC52E1DB9F6ED0049E732 /* NSObject+VDSharedInstance.m */,
+				D7DCC52F1DB9F6ED0049E732 /* objcObject.h */,
+			);
+			path = objcObject;
+			sourceTree = "<group>";
+		};
+		D7DCC5301DB9F6ED0049E732 /* objcProperty */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5311DB9F6ED0049E732 /* NSObject+VDProperty.h */,
+				D7DCC5321DB9F6ED0049E732 /* NSObject+VDProperty.m */,
+				D7DCC5331DB9F6ED0049E732 /* objcProperty.h */,
+				D7DCC5341DB9F6ED0049E732 /* VDProperty.h */,
+				D7DCC5351DB9F6ED0049E732 /* VDProperty.m */,
+			);
+			path = objcProperty;
+			sourceTree = "<group>";
+		};
+		D7DCC5401DB9F6ED0049E732 /* objcRouter */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5411DB9F6ED0049E732 /* objcRouter.h */,
+				D7DCC5421DB9F6ED0049E732 /* UIViewController+VDRouter.h */,
+				D7DCC5431DB9F6ED0049E732 /* UIViewController+VDRouter.m */,
+				D7DCC5441DB9F6ED0049E732 /* VDRouter.h */,
+				D7DCC5451DB9F6ED0049E732 /* VDRouter.m */,
+				D7DCC5461DB9F6ED0049E732 /* VDRouterNavigationController.h */,
+				D7DCC5471DB9F6ED0049E732 /* VDRouterNavigationController.m */,
+			);
+			path = objcRouter;
+			sourceTree = "<group>";
+		};
+		D7DCC5481DB9F6ED0049E732 /* objcScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5491DB9F6ED0049E732 /* objcScrollView.h */,
+				D7DCC54A1DB9F6ED0049E732 /* UIScrollView+VDPosition.h */,
+				D7DCC54B1DB9F6ED0049E732 /* UIScrollView+VDPosition.m */,
+			);
+			path = objcScrollView;
+			sourceTree = "<group>";
+		};
+		D7DCC54C1DB9F6ED0049E732 /* objcSelectorArgument */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC54D1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.h */,
+				D7DCC54E1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.m */,
+				D7DCC54F1DB9F6ED0049E732 /* objcSelectorArgument.h */,
+				D7DCC5501DB9F6ED0049E732 /* VDSelectorArgument.h */,
+				D7DCC5511DB9F6ED0049E732 /* VDSelectorArgument.m */,
+			);
+			path = objcSelectorArgument;
+			sourceTree = "<group>";
+		};
+		D7DCC5521DB9F6ED0049E732 /* objcSlider */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5531DB9F6ED0049E732 /* objcSlider.h */,
+				D7DCC5541DB9F6ED0049E732 /* UISlider+VDTrackHeight.h */,
+				D7DCC5551DB9F6ED0049E732 /* UISlider+VDTrackHeight.m */,
+				D7DCC5561DB9F6ED0049E732 /* UISlider+VDValue.h */,
+				D7DCC5571DB9F6ED0049E732 /* UISlider+VDValue.m */,
+			);
+			path = objcSlider;
+			sourceTree = "<group>";
+		};
+		D7DCC5581DB9F6ED0049E732 /* objcString */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5591DB9F6ED0049E732 /* NSString+Change.h */,
+				D7DCC55A1DB9F6ED0049E732 /* NSString+Change.m */,
+				D7DCC55B1DB9F6ED0049E732 /* NSString+VDDate.h */,
+				D7DCC55C1DB9F6ED0049E732 /* NSString+VDDate.m */,
+				D7DCC55D1DB9F6ED0049E732 /* NSString+VDEmpty.h */,
+				D7DCC55E1DB9F6ED0049E732 /* NSString+VDEmpty.m */,
+				D7DCC55F1DB9F6ED0049E732 /* NSString+VDRegex.h */,
+				D7DCC5601DB9F6ED0049E732 /* NSString+VDRegex.m */,
+				D7DCC5611DB9F6ED0049E732 /* NSString+VDUrl.h */,
+				D7DCC5621DB9F6ED0049E732 /* NSString+VDUrl.m */,
+				D7DCC5631DB9F6ED0049E732 /* NSString+VDValue.h */,
+				D7DCC5641DB9F6ED0049E732 /* NSString+VDValue.m */,
+				D7DCC5651DB9F6ED0049E732 /* objcString.h */,
+			);
+			path = objcString;
+			sourceTree = "<group>";
+		};
+		D7DCC5661DB9F6ED0049E732 /* objcTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5671DB9F6ED0049E732 /* objcTableView.h */,
+				D7DCC5681DB9F6ED0049E732 /* UITableView+VDTouches.h */,
+				D7DCC5691DB9F6ED0049E732 /* UITableView+VDTouches.m */,
+				D7DCC56A1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.h */,
+				D7DCC56B1DB9F6ED0049E732 /* UITableViewCell+VDDequeue.m */,
+				D7DCC56C1DB9F6ED0049E732 /* UITableViewCell+VDRegister.h */,
+				D7DCC56D1DB9F6ED0049E732 /* UITableViewCell+VDRegister.m */,
+			);
+			path = objcTableView;
+			sourceTree = "<group>";
+		};
+		D7DCC56E1DB9F6ED0049E732 /* objcTheme */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC56F1DB9F6ED0049E732 /* NSObject+VDThemeManager.h */,
+				D7DCC5701DB9F6ED0049E732 /* NSObject+VDThemeManager.m */,
+				D7DCC5711DB9F6ED0049E732 /* objcTheme.h */,
+				D7DCC5721DB9F6ED0049E732 /* UIButton+VDTheme.h */,
+				D7DCC5731DB9F6ED0049E732 /* UIButton+VDTheme.m */,
+				D7DCC5741DB9F6ED0049E732 /* UIImageView+VDTheme.h */,
+				D7DCC5751DB9F6ED0049E732 /* UIImageView+VDTheme.m */,
+				D7DCC5761DB9F6ED0049E732 /* UILabel+VDTheme.h */,
+				D7DCC5771DB9F6ED0049E732 /* UILabel+VDTheme.m */,
+				D7DCC5781DB9F6ED0049E732 /* UINavigationBar+VDTheme.h */,
+				D7DCC5791DB9F6ED0049E732 /* UINavigationBar+VDTheme.m */,
+				D7DCC57A1DB9F6ED0049E732 /* UISlider+VDTheme.h */,
+				D7DCC57B1DB9F6ED0049E732 /* UISlider+VDTheme.m */,
+				D7DCC57C1DB9F6ED0049E732 /* UIView+VDTheme.h */,
+				D7DCC57D1DB9F6ED0049E732 /* UIView+VDTheme.m */,
+				D7DCC57E1DB9F6ED0049E732 /* VDThemeElement.h */,
+				D7DCC57F1DB9F6ED0049E732 /* VDThemeElement.m */,
+				D7DCC5801DB9F6ED0049E732 /* VDThemeManager.h */,
+				D7DCC5811DB9F6ED0049E732 /* VDThemeManager.m */,
+				D7DCC5821DB9F6ED0049E732 /* VDThemeSelectorArgument.h */,
+				D7DCC5831DB9F6ED0049E732 /* VDThemeSelectorArgument.m */,
+			);
+			path = objcTheme;
+			sourceTree = "<group>";
+		};
+		D7DCC5841DB9F6ED0049E732 /* objcTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5851DB9F6ED0049E732 /* objcTimer.h */,
+				D7DCC5861DB9F6ED0049E732 /* VDGCDTimer.h */,
+				D7DCC5871DB9F6ED0049E732 /* VDGCDTimer.m */,
+			);
+			path = objcTimer;
+			sourceTree = "<group>";
+		};
+		D7DCC5881DB9F6ED0049E732 /* objcUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5891DB9F6ED0049E732 /* objcUserDefaults.h */,
+			);
+			path = objcUserDefaults;
+			sourceTree = "<group>";
+		};
+		D7DCC58A1DB9F6ED0049E732 /* objcView */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC58B1DB9F6ED0049E732 /* objcView.h */,
+				D7DCC58C1DB9F6ED0049E732 /* UIView+VDConstraint.h */,
+				D7DCC58D1DB9F6ED0049E732 /* UIView+VDConstraint.m */,
+				D7DCC58E1DB9F6ED0049E732 /* UIView+VDFrame.h */,
+				D7DCC58F1DB9F6ED0049E732 /* UIView+VDFrame.m */,
+				D7DCC5901DB9F6ED0049E732 /* UIView+VDGesture.h */,
+				D7DCC5911DB9F6ED0049E732 /* UIView+VDGesture.m */,
+				D7DCC5921DB9F6ED0049E732 /* UIView+VDInstance.h */,
+				D7DCC5931DB9F6ED0049E732 /* UIView+VDInstance.m */,
+				D7DCC5941DB9F6ED0049E732 /* UIView+VDSubview.h */,
+				D7DCC5951DB9F6ED0049E732 /* UIView+VDSubview.m */,
+			);
+			path = objcView;
+			sourceTree = "<group>";
+		};
+		D7DCC5961DB9F6ED0049E732 /* objcViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5971DB9F6ED0049E732 /* objcViewController.h */,
+				D7DCC5981DB9F6ED0049E732 /* UIViewController+VDHierarchy.h */,
+				D7DCC5991DB9F6ED0049E732 /* UIViewController+VDHierarchy.m */,
+				D7DCC59A1DB9F6ED0049E732 /* UIViewController+VDInstance.h */,
+				D7DCC59B1DB9F6ED0049E732 /* UIViewController+VDInstance.m */,
+				D7DCC59C1DB9F6ED0049E732 /* UIViewController+VDPresent.h */,
+				D7DCC59D1DB9F6ED0049E732 /* UIViewController+VDPresent.m */,
+				D7DCC59E1DB9F6ED0049E732 /* UIViewController+VDViewState.h */,
+				D7DCC59F1DB9F6ED0049E732 /* UIViewController+VDViewState.m */,
+			);
+			path = objcViewController;
+			sourceTree = "<group>";
+		};
+		D7DCC5A01DB9F6ED0049E732 /* objcWeakRef */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5A11DB9F6ED0049E732 /* objcWeakRef.h */,
+				D7DCC5A21DB9F6ED0049E732 /* VDWeakRef.h */,
+				D7DCC5A31DB9F6ED0049E732 /* VDWeakRef.m */,
+			);
+			path = objcWeakRef;
+			sourceTree = "<group>";
+		};
+		D7DCC5A41DB9F6ED0049E732 /* objcWindow */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC5A51DB9F6ED0049E732 /* objcWindow.h */,
+			);
+			path = objcWindow;
+			sourceTree = "<group>";
+		};
+		D7DCC6A61DB9F9290049E732 /* objcHud */ = {
+			isa = PBXGroup;
+			children = (
+				D7DCC6A71DB9F9290049E732 /* objcHud.h */,
+				D7DCC6A81DB9F9290049E732 /* UIView+VDHud.h */,
+				D7DCC6A91DB9F9290049E732 /* UIView+VDHud.m */,
+				D7DCC6AA1DB9F9290049E732 /* UIViewController+VDHud.h */,
+				D7DCC6AB1DB9F9290049E732 /* UIViewController+VDHud.m */,
+				D7DCC6AC1DB9F9290049E732 /* VDHudMaskView.h */,
+				D7DCC6AD1DB9F9290049E732 /* VDHudMaskView.m */,
+				D7DCC6AE1DB9F9290049E732 /* VDHudViewController.h */,
+				D7DCC6AF1DB9F9290049E732 /* VDHudViewController.m */,
+				D7DCC6B01DB9F9290049E732 /* VDSimpleHudViewController.h */,
+				D7DCC6B11DB9F9290049E732 /* VDSimpleHudViewController.m */,
+				D7DCC6B21DB9F9290049E732 /* VDToastView.h */,
+				D7DCC6B31DB9F9290049E732 /* VDToastView.m */,
+			);
+			path = objcHud;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +1039,133 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DCC6B71DB9F9290049E732 /* UIViewController+VDHud.h in Headers */,
+				D7DCC5ED1DB9F6ED0049E732 /* UIImage+VDOrientation.h in Headers */,
+				D7DCC6261DB9F6ED0049E732 /* objcProperty.h in Headers */,
+				D7DCC5F41DB9F6ED0049E732 /* UIView+VDAutoPanUp.h in Headers */,
+				D7DCC5FF1DB9F6ED0049E732 /* VDJsonObject.h in Headers */,
+				D7DCC6121DB9F6ED0049E732 /* VDLoadingLayer.h in Headers */,
+				D7DCC6881DB9F6ED0049E732 /* VDWeakRef.h in Headers */,
+				D7DCC5B11DB9F6ED0049E732 /* objcCollectionView.h in Headers */,
+				D7DCC5EF1DB9F6ED0049E732 /* UIImage+VDResize.h in Headers */,
+				D7DCC5E81DB9F6ED0049E732 /* objcImage.h in Headers */,
+				D7DCC5F81DB9F6ED0049E732 /* VDAutoPanUpElement.h in Headers */,
+				D7DCC67C1DB9F6ED0049E732 /* UIView+VDSubview.h in Headers */,
+				D7DCC6071DB9F6ED0049E732 /* VDKVOElement.h in Headers */,
+				D7DCC65C1DB9F6ED0049E732 /* objcTheme.h in Headers */,
+				D7DCC6851DB9F6ED0049E732 /* UIViewController+VDViewState.h in Headers */,
+				D7DCC6811DB9F6ED0049E732 /* UIViewController+VDInstance.h in Headers */,
+				D7DCC5B71DB9F6ED0049E732 /* UIColor+VDChange.h in Headers */,
+				D7DCC6241DB9F6ED0049E732 /* NSObject+VDProperty.h in Headers */,
+				D7DCC6B51DB9F9290049E732 /* UIView+VDHud.h in Headers */,
+				D7DCC6871DB9F6ED0049E732 /* objcWeakRef.h in Headers */,
+				D7DCC5C01DB9F6ED0049E732 /* objcDate.h in Headers */,
+				D7DCC67F1DB9F6ED0049E732 /* UIViewController+VDHierarchy.h in Headers */,
+				D7DCC6331DB9F6ED0049E732 /* UIViewController+VDRouter.h in Headers */,
+				D7DCC6561DB9F6ED0049E732 /* UITableViewCell+VDDequeue.h in Headers */,
+				D7DCC5BE1DB9F6ED0049E732 /* NSDate+VDString.h in Headers */,
+				D7DCC6171DB9F6ED0049E732 /* objcMath.h in Headers */,
+				D7DCC6271DB9F6ED0049E732 /* VDProperty.h in Headers */,
+				D7DCC6321DB9F6ED0049E732 /* objcRouter.h in Headers */,
+				D7DCC5AF1DB9F6ED0049E732 /* objcArray.h in Headers */,
+				D7DCC6441DB9F6ED0049E732 /* UISlider+VDValue.h in Headers */,
+				D7DCC5FE1DB9F6ED0049E732 /* objcJson.h in Headers */,
+				D7DCC6101DB9F6ED0049E732 /* VDLoadingAngularVariationView.h in Headers */,
+				D7DCC6391DB9F6ED0049E732 /* objcScrollView.h in Headers */,
+				D7DCC5FA1DB9F6ED0049E732 /* VDAutoPanUpManager.h in Headers */,
+				D7DCC63E1DB9F6ED0049E732 /* objcSelectorArgument.h in Headers */,
+				D7DCC5B61DB9F6ED0049E732 /* objcColor.h in Headers */,
+				D7DCC6411DB9F6ED0049E732 /* objcSlider.h in Headers */,
+				D7DCC6021DB9F6ED0049E732 /* NSObject+VDKVO.h in Headers */,
+				D7DCC5C41DB9F6ED0049E732 /* NSDictionary+VDReverse.h in Headers */,
+				D7DCC64A1DB9F6ED0049E732 /* NSString+VDEmpty.h in Headers */,
+				D7DCC5D31DB9F6ED0049E732 /* VDHook.h in Headers */,
+				D7DCC5B91DB9F6ED0049E732 /* UIColor+VDHex.h in Headers */,
+				D7DCC6421DB9F6ED0049E732 /* UISlider+VDTrackHeight.h in Headers */,
+				D7DCC6721DB9F6ED0049E732 /* objcUserDefaults.h in Headers */,
 				D7DCC4631DB9F53F0049E732 /* objcTools.h in Headers */,
+				D7DCC64E1DB9F6ED0049E732 /* NSString+VDUrl.h in Headers */,
+				D7DCC60C1DB9F6ED0049E732 /* CALayer+VDShadow.h in Headers */,
+				D7DCC6781DB9F6ED0049E732 /* UIView+VDGesture.h in Headers */,
+				D7DCC61A1DB9F6ED0049E732 /* objcNotificationCenter.h in Headers */,
+				D7DCC5CD1DB9F6ED0049E732 /* objcFont.h in Headers */,
+				D7DCC6181DB9F6ED0049E732 /* NSObject+VDNotification.h in Headers */,
+				D7DCC5C21DB9F6ED0049E732 /* NSDictionary+VDMerge.h in Headers */,
+				D7DCC6831DB9F6ED0049E732 /* UIViewController+VDPresent.h in Headers */,
+				D7DCC63C1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.h in Headers */,
+				D7DCC5D01DB9F6ED0049E732 /* NSObject+VDHook.h in Headers */,
+				D7DCC6051DB9F6ED0049E732 /* VDKVOChange.h in Headers */,
+				D7DCC5B01DB9F6ED0049E732 /* objcBlock.h in Headers */,
+				D7DCC61B1DB9F6ED0049E732 /* VDNotificationElement.h in Headers */,
+				D7DCC5D91DB9F6ED0049E732 /* VDHookRecorder.h in Headers */,
+				D7DCC5F61DB9F6ED0049E732 /* UIView+VDInputManager.h in Headers */,
+				D7DCC5AD1DB9F6ED0049E732 /* NSMutableArray+VDStack.h in Headers */,
+				D7DCC6041DB9F6ED0049E732 /* objcKVO.h in Headers */,
+				D7DCC61D1DB9F6ED0049E732 /* NSObject+VDClass.h in Headers */,
+				D7DCC6211DB9F6ED0049E732 /* NSObject+VDSharedInstance.h in Headers */,
+				D7DCC6161DB9F6ED0049E732 /* objcLog.h in Headers */,
+				D7DCC5BD1DB9F6ED0049E732 /* objcData.h in Headers */,
+				D7DCC6581DB9F6ED0049E732 /* UITableViewCell+VDRegister.h in Headers */,
+				D7DCC65F1DB9F6ED0049E732 /* UIImageView+VDTheme.h in Headers */,
+				D7DCC66F1DB9F6ED0049E732 /* objcTimer.h in Headers */,
+				D7DCC6BB1DB9F9290049E732 /* VDHudViewController.h in Headers */,
+				D7DCC5A91DB9F6ED0049E732 /* UIApplication+VDStatusBar.h in Headers */,
+				D7DCC60F1DB9F6ED0049E732 /* objcLoading.h in Headers */,
+				D7DCC5C61DB9F6ED0049E732 /* objcDictionary.h in Headers */,
+				D7DCC5BB1DB9F6ED0049E732 /* NSData+VDConcatenate.h in Headers */,
+				D7DCC6611DB9F6ED0049E732 /* UILabel+VDTheme.h in Headers */,
+				D7DCC64C1DB9F6ED0049E732 /* NSString+VDRegex.h in Headers */,
+				D7DCC63A1DB9F6ED0049E732 /* UIScrollView+VDPosition.h in Headers */,
+				D7DCC6731DB9F6ED0049E732 /* objcView.h in Headers */,
+				D7DCC67E1DB9F6ED0049E732 /* objcViewController.h in Headers */,
+				D7DCC6371DB9F6ED0049E732 /* VDRouterNavigationController.h in Headers */,
+				D7DCC6521DB9F6ED0049E732 /* objcString.h in Headers */,
+				D7DCC6141DB9F6ED0049E732 /* VDLoadingView.h in Headers */,
+				D7DCC6691DB9F6ED0049E732 /* VDThemeElement.h in Headers */,
+				D7DCC6701DB9F6ED0049E732 /* VDGCDTimer.h in Headers */,
+				D7DCC65A1DB9F6ED0049E732 /* NSObject+VDThemeManager.h in Headers */,
+				D7DCC5B21DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.h in Headers */,
+				D7DCC60A1DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.h in Headers */,
+				D7DCC6501DB9F6ED0049E732 /* NSString+VDValue.h in Headers */,
+				D7DCC68A1DB9F6ED0049E732 /* objcWindow.h in Headers */,
+				D7DCC6BD1DB9F9290049E732 /* VDSimpleHudViewController.h in Headers */,
+				D7DCC66D1DB9F6ED0049E732 /* VDThemeSelectorArgument.h in Headers */,
+				D7DCC5A61DB9F6ED0049E732 /* objcApplication.h in Headers */,
+				D7DCC5CE1DB9F6ED0049E732 /* UIFont+VDSize.h in Headers */,
+				D7DCC5F11DB9F6ED0049E732 /* UIImage+VDView.h in Headers */,
+				D7DCC6481DB9F6ED0049E732 /* NSString+VDDate.h in Headers */,
+				D7DCC6351DB9F6ED0049E732 /* VDRouter.h in Headers */,
+				D7DCC63F1DB9F6ED0049E732 /* VDSelectorArgument.h in Headers */,
+				D7DCC6631DB9F6ED0049E732 /* UINavigationBar+VDTheme.h in Headers */,
+				D7DCC5D71DB9F6ED0049E732 /* VDHookInvocationInfo.h in Headers */,
+				D7DCC6651DB9F6ED0049E732 /* UISlider+VDTheme.h in Headers */,
+				D7DCC5B41DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.h in Headers */,
+				D7DCC6541DB9F6ED0049E732 /* UITableView+VDTouches.h in Headers */,
+				D7DCC65D1DB9F6ED0049E732 /* UIButton+VDTheme.h in Headers */,
+				D7DCC5D51DB9F6ED0049E732 /* VDHookElement.h in Headers */,
+				D7DCC6091DB9F6ED0049E732 /* objcLabel.h in Headers */,
+				D7DCC66B1DB9F6ED0049E732 /* VDThemeManager.h in Headers */,
+				D7DCC6671DB9F6ED0049E732 /* UIView+VDTheme.h in Headers */,
+				D7DCC61F1DB9F6ED0049E732 /* NSObject+VDPerform.h in Headers */,
+				D7DCC5EB1DB9F6ED0049E732 /* UIImage+VDFile.h in Headers */,
+				D7DCC6741DB9F6ED0049E732 /* UIView+VDConstraint.h in Headers */,
+				D7DCC6011DB9F6ED0049E732 /* objcKeyPath.h in Headers */,
+				D7DCC6BF1DB9F9290049E732 /* VDToastView.h in Headers */,
+				D7DCC6B41DB9F9290049E732 /* objcHud.h in Headers */,
+				D7DCC5C11DB9F6ED0049E732 /* objcDevice.h in Headers */,
+				D7DCC6531DB9F6ED0049E732 /* objcTableView.h in Headers */,
+				D7DCC5A71DB9F6ED0049E732 /* UIApplication+VDNotification.h in Headers */,
+				D7DCC67A1DB9F6ED0049E732 /* UIView+VDInstance.h in Headers */,
+				D7DCC6461DB9F6ED0049E732 /* NSString+Change.h in Headers */,
+				D7DCC5AB1DB9F6ED0049E732 /* NSMutableArray+VDQueue.h in Headers */,
+				D7DCC5FC1DB9F6ED0049E732 /* VDInputManager.h in Headers */,
+				D7DCC60E1DB9F6ED0049E732 /* objcLayer.h in Headers */,
+				D7DCC6231DB9F6ED0049E732 /* objcObject.h in Headers */,
+				D7DCC6B91DB9F9290049E732 /* VDHudMaskView.h in Headers */,
+				D7DCC5E91DB9F6ED0049E732 /* UIImage+VDColor.h in Headers */,
+				D7DCC5D21DB9F6ED0049E732 /* objcHook.h in Headers */,
+				D7DCC5F31DB9F6ED0049E732 /* objcInput.h in Headers */,
+				D7DCC6761DB9F6ED0049E732 /* UIView+VDFrame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +1269,94 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DCC60B1DB9F6ED0049E732 /* UILabel+VDVerticalAlignment.m in Sources */,
+				D7DCC67B1DB9F6ED0049E732 /* UIView+VDInstance.m in Sources */,
+				D7DCC5FD1DB9F6ED0049E732 /* VDInputManager.m in Sources */,
+				D7DCC5F21DB9F6ED0049E732 /* UIImage+VDView.m in Sources */,
+				D7DCC5AE1DB9F6ED0049E732 /* NSMutableArray+VDStack.m in Sources */,
+				D7DCC6B61DB9F9290049E732 /* UIView+VDHud.m in Sources */,
+				D7DCC6751DB9F6ED0049E732 /* UIView+VDConstraint.m in Sources */,
+				D7DCC5FB1DB9F6ED0049E732 /* VDAutoPanUpManager.m in Sources */,
+				D7DCC5BA1DB9F6ED0049E732 /* UIColor+VDHex.m in Sources */,
+				D7DCC66A1DB9F6ED0049E732 /* VDThemeElement.m in Sources */,
+				D7DCC6031DB9F6ED0049E732 /* NSObject+VDKVO.m in Sources */,
+				D7DCC5F91DB9F6ED0049E732 /* VDAutoPanUpElement.m in Sources */,
+				D7DCC67D1DB9F6ED0049E732 /* UIView+VDSubview.m in Sources */,
+				D7DCC5EC1DB9F6ED0049E732 /* UIImage+VDFile.m in Sources */,
+				D7DCC6BC1DB9F9290049E732 /* VDHudViewController.m in Sources */,
+				D7DCC5B31DB9F6ED0049E732 /* UICollectionViewCell+VDDequeue.m in Sources */,
+				D7DCC60D1DB9F6ED0049E732 /* CALayer+VDShadow.m in Sources */,
+				D7DCC6151DB9F6ED0049E732 /* VDLoadingView.m in Sources */,
+				D7DCC6591DB9F6ED0049E732 /* UITableViewCell+VDRegister.m in Sources */,
+				D7DCC6771DB9F6ED0049E732 /* UIView+VDFrame.m in Sources */,
+				D7DCC61E1DB9F6ED0049E732 /* NSObject+VDClass.m in Sources */,
+				D7DCC6711DB9F6ED0049E732 /* VDGCDTimer.m in Sources */,
+				D7DCC6081DB9F6ED0049E732 /* VDKVOElement.m in Sources */,
+				D7DCC6361DB9F6ED0049E732 /* VDRouter.m in Sources */,
+				D7DCC6511DB9F6ED0049E732 /* NSString+VDValue.m in Sources */,
+				D7DCC5B81DB9F6ED0049E732 /* UIColor+VDChange.m in Sources */,
+				D7DCC6861DB9F6ED0049E732 /* UIViewController+VDViewState.m in Sources */,
+				D7DCC63B1DB9F6ED0049E732 /* UIScrollView+VDPosition.m in Sources */,
+				D7DCC63D1DB9F6ED0049E732 /* NSObject+VDSelectorArgument.m in Sources */,
+				D7DCC5F71DB9F6ED0049E732 /* UIView+VDInputManager.m in Sources */,
+				D7DCC5F51DB9F6ED0049E732 /* UIView+VDAutoPanUp.m in Sources */,
+				D7DCC6491DB9F6ED0049E732 /* NSString+VDDate.m in Sources */,
+				D7DCC6791DB9F6ED0049E732 /* UIView+VDGesture.m in Sources */,
+				D7DCC6191DB9F6ED0049E732 /* NSObject+VDNotification.m in Sources */,
+				D7DCC65B1DB9F6ED0049E732 /* NSObject+VDThemeManager.m in Sources */,
+				D7DCC64D1DB9F6ED0049E732 /* NSString+VDRegex.m in Sources */,
+				D7DCC5F01DB9F6ED0049E732 /* UIImage+VDResize.m in Sources */,
+				D7DCC5D41DB9F6ED0049E732 /* VDHook.m in Sources */,
+				D7DCC5BC1DB9F6ED0049E732 /* NSData+VDConcatenate.m in Sources */,
+				D7DCC6061DB9F6ED0049E732 /* VDKVOChange.m in Sources */,
+				D7DCC61C1DB9F6ED0049E732 /* VDNotificationElement.m in Sources */,
+				D7DCC6841DB9F6ED0049E732 /* UIViewController+VDPresent.m in Sources */,
+				D7DCC6111DB9F6ED0049E732 /* VDLoadingAngularVariationView.m in Sources */,
+				D7DCC6381DB9F6ED0049E732 /* VDRouterNavigationController.m in Sources */,
+				D7DCC5AA1DB9F6ED0049E732 /* UIApplication+VDStatusBar.m in Sources */,
+				D7DCC5D81DB9F6ED0049E732 /* VDHookInvocationInfo.m in Sources */,
+				D7DCC6681DB9F6ED0049E732 /* UIView+VDTheme.m in Sources */,
+				D7DCC6B81DB9F9290049E732 /* UIViewController+VDHud.m in Sources */,
+				D7DCC6801DB9F6ED0049E732 /* UIViewController+VDHierarchy.m in Sources */,
+				D7DCC6401DB9F6ED0049E732 /* VDSelectorArgument.m in Sources */,
+				D7DCC6221DB9F6ED0049E732 /* NSObject+VDSharedInstance.m in Sources */,
+				D7DCC5AC1DB9F6ED0049E732 /* NSMutableArray+VDQueue.m in Sources */,
+				D7DCC6131DB9F6ED0049E732 /* VDLoadingLayer.m in Sources */,
+				D7DCC6201DB9F6ED0049E732 /* NSObject+VDPerform.m in Sources */,
+				D7DCC6551DB9F6ED0049E732 /* UITableView+VDTouches.m in Sources */,
+				D7DCC65E1DB9F6ED0049E732 /* UIButton+VDTheme.m in Sources */,
+				D7DCC6251DB9F6ED0049E732 /* NSObject+VDProperty.m in Sources */,
+				D7DCC6601DB9F6ED0049E732 /* UIImageView+VDTheme.m in Sources */,
+				D7DCC66C1DB9F6ED0049E732 /* VDThemeManager.m in Sources */,
+				D7DCC5EE1DB9F6ED0049E732 /* UIImage+VDOrientation.m in Sources */,
+				D7DCC6571DB9F6ED0049E732 /* UITableViewCell+VDDequeue.m in Sources */,
+				D7DCC5CF1DB9F6ED0049E732 /* UIFont+VDSize.m in Sources */,
+				D7DCC5C51DB9F6ED0049E732 /* NSDictionary+VDReverse.m in Sources */,
+				D7DCC6641DB9F6ED0049E732 /* UINavigationBar+VDTheme.m in Sources */,
+				D7DCC6C01DB9F9290049E732 /* VDToastView.m in Sources */,
+				D7DCC6451DB9F6ED0049E732 /* UISlider+VDValue.m in Sources */,
+				D7DCC5DA1DB9F6ED0049E732 /* VDHookRecorder.m in Sources */,
+				D7DCC5D11DB9F6ED0049E732 /* NSObject+VDHook.m in Sources */,
+				D7DCC6431DB9F6ED0049E732 /* UISlider+VDTrackHeight.m in Sources */,
+				D7DCC6661DB9F6ED0049E732 /* UISlider+VDTheme.m in Sources */,
+				D7DCC6471DB9F6ED0049E732 /* NSString+Change.m in Sources */,
+				D7DCC6821DB9F6ED0049E732 /* UIViewController+VDInstance.m in Sources */,
+				D7DCC64B1DB9F6ED0049E732 /* NSString+VDEmpty.m in Sources */,
+				D7DCC6281DB9F6ED0049E732 /* VDProperty.m in Sources */,
+				D7DCC6001DB9F6ED0049E732 /* VDJsonObject.m in Sources */,
+				D7DCC5EA1DB9F6ED0049E732 /* UIImage+VDColor.m in Sources */,
+				D7DCC5D61DB9F6ED0049E732 /* VDHookElement.m in Sources */,
+				D7DCC5BF1DB9F6ED0049E732 /* NSDate+VDString.m in Sources */,
+				D7DCC6BA1DB9F9290049E732 /* VDHudMaskView.m in Sources */,
+				D7DCC6891DB9F6ED0049E732 /* VDWeakRef.m in Sources */,
+				D7DCC5C31DB9F6ED0049E732 /* NSDictionary+VDMerge.m in Sources */,
+				D7DCC6621DB9F6ED0049E732 /* UILabel+VDTheme.m in Sources */,
+				D7DCC64F1DB9F6ED0049E732 /* NSString+VDUrl.m in Sources */,
+				D7DCC66E1DB9F6ED0049E732 /* VDThemeSelectorArgument.m in Sources */,
+				D7DCC6BE1DB9F9290049E732 /* VDSimpleHudViewController.m in Sources */,
+				D7DCC6341DB9F6ED0049E732 /* UIViewController+VDRouter.m in Sources */,
+				D7DCC5A81DB9F6ED0049E732 /* UIApplication+VDNotification.m in Sources */,
+				D7DCC5B51DB9F6ED0049E732 /* UICollectionViewCell+VDRegister.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
