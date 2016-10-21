@@ -35,6 +35,7 @@ FOUNDATION_EXPORT const unsigned char objcToolsVersionString[];
 #import <objcTools/objcKeyPath.h>
 #import <objcTools/objcKVO.h>
 #import <objcTools/objcLayer.h>
+#import <objcTools/objcLabel.h>
 #import <objcTools/objcLoading.h>
 #import <objcTools/objcLog.h>
 #import <objcTools/objcMath.h>
