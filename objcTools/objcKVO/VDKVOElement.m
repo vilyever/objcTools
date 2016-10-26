@@ -34,6 +34,7 @@
     VDWeakifySelf;
     self.hookedDeallocElement = [_target vd_hookSelector:VDHookDeallocSelector beforeBlock:^(VDHookElement *element, VDHookInvocationInfo *info) {
         VDStrongifySelf;
+        [info.invocation.target removeObserver:self forKeyPath:self.keyPath];
         [self dispose];
     }];
     

@@ -50,6 +50,19 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         [recorder invokeInsteadElements:invocationInfo];
     }
     else {
+        // dealloc 时取消HOOK,防止KVO崩溃
+        if ([NSStringFromSelector(originalSelector) isEqualToString:NSStringFromSelector(VDHookDeallocSelector)]) {
+            [VDHook internalUnswizzleForwardInvocation:object_getClass(target)];
+            
+            Class hookClazz = object_getClass(target);
+            Method targetMethod = class_getInstanceMethod(hookClazz, swizzleSelector);
+            const char *typeEncoding = method_getTypeEncoding(targetMethod);
+            
+            class_replaceMethod(hookClazz, originalSelector, method_getImplementation(targetMethod), typeEncoding);
+            
+            ( (void (*)(id, SEL) )[target methodForSelector:originalSelector] )(target, originalSelector);
+            return;
+        }
         Class clazz = object_getClass(invocation.target);
         do {
             if ([clazz instancesRespondToSelector:swizzleSelector]) {
@@ -136,30 +149,32 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
     Class hookClazz = [self internalHookClassForInstance:instance error:nil];
     
     Method targetMethod = class_getInstanceMethod(hookClazz, selector);
-//    IMP targetMethodIMP = method_getImplementation(targetMethod);
+    //    IMP targetMethodIMP = method_getImplementation(targetMethod);
     
     // 是否hook过
     if (![self internalCheckIsHookedTarget:instance selector:selector]) {
         SEL swizzleSelector = VDHookGetSwizzleSelector(selector);
         
-        NSCAssert(![hookClazz instancesRespondToSelector:swizzleSelector], @"Alias method name %@ to hook selctor %@ on %@ is being possessed", NSStringFromSelector(swizzleSelector),  NSStringFromSelector(selector), hookClazz);
+        if ([hookClazz instancesRespondToSelector:swizzleSelector]) {
+            NSLog(@"Alias method name %@ to hook selctor %@ on %@ is being possessed", NSStringFromSelector(swizzleSelector),  NSStringFromSelector(selector), hookClazz);
+        }
         
         // 原先考虑到Aspects冲突，现发现Category中替换方法后不能使用下述算法。若selector的实现imp为_objc_msgForward,将导致此hook失效，考虑其它解决方案
-//        BOOL isHookedByOther = ![self internalCheckIsImp:targetMethodIMP fitSelector:selector];        
-//        // 是否selector的实现imp被替换，若是，查找所有方法的实现imp尝试找出selector的原imp
-//        if (isHookedByOther) {
-//            targetMethod = nil;
-//            unsigned int methodsCount;
-//            Method *methods = class_copyMethodList(hookClazz, &methodsCount);
-//            while (methodsCount--) {
-//                Method method = methods[methodsCount];
-//                IMP imp = method_getImplementation(method);
-//                if ([self internalCheckIsImp:imp fitSelector:selector]) {
-//                    targetMethod = method;
-//                    break;
-//                }
-//            }
-//        }
+        //        BOOL isHookedByOther = ![self internalCheckIsImp:targetMethodIMP fitSelector:selector];
+        //        // 是否selector的实现imp被替换，若是，查找所有方法的实现imp尝试找出selector的原imp
+        //        if (isHookedByOther) {
+        //            targetMethod = nil;
+        //            unsigned int methodsCount;
+        //            Method *methods = class_copyMethodList(hookClazz, &methodsCount);
+        //            while (methodsCount--) {
+        //                Method method = methods[methodsCount];
+        //                IMP imp = method_getImplementation(method);
+        //                if ([self internalCheckIsImp:imp fitSelector:selector]) {
+        //                    targetMethod = method;
+        //                    break;
+        //                }
+        //            }
+        //        }
         
         NSCAssert(targetMethod, @"Original implementation for %@ cannot find, maybe swizzle by others and no make a alias method on %@", NSStringFromSelector(selector), hookClazz);
         
@@ -169,7 +184,7 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         NSCAssert(added, @"Original implementation for %@ is already copied to %@ on %@", NSStringFromSelector(selector), NSStringFromSelector(swizzleSelector), hookClazz);
         
         class_replaceMethod(hookClazz, selector, _objc_msgForward, typeEncoding);
-
+        
         [self internalMarkHookedTarget:instance selector:selector];
     }
 }
@@ -211,7 +226,7 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         // 替换subclass的class方法，使之返回当前instance的class
         [self internalHookClassMethodForClass:subclass replacedClass:statedClass];
         // 替换subclass的metaClass的class方法，使之返回当前instance的class，kvo中未如此做，暂时取消
-//        [self internalHookClassMethodForClass:object_getClass(subclass) replacedClass:statedClass];
+        //        [self internalHookClassMethodForClass:object_getClass(subclass) replacedClass:statedClass];
         objc_registerClassPair(subclass);
     }
     
@@ -228,7 +243,9 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
     
     // TODO:如果forwardInvocation:被hook过（e.g. Aspects)，可记录该hook实现，在VDHookedForwardInvocationMethod合理调用，暂时先直接替换。
     
-    IMP originalImplementation = class_replaceMethod(clazz, @selector(forwardInvocation:), (IMP)VDHookedForwardInvocationMethod, "v@:@");
+    Method originalMethod = class_getInstanceMethod(clazz, @selector(forwardInvocation:));
+    IMP originalImplementation = method_getImplementation(originalMethod);
+    class_replaceMethod(clazz, @selector(forwardInvocation:), (IMP)VDHookedForwardInvocationMethod, "v@:@");
     if (originalImplementation) {
         class_addMethod(clazz, NSSelectorFromString(VDHookForwardInvocationSelectorName), originalImplementation, "v@:@");
     }
@@ -260,7 +277,13 @@ static char VDHookMarkDicAssociatedObjectKey;
         hookDic = [[NSMutableDictionary alloc] init];
         objc_setAssociatedObject([VDHook sharedInstance], &VDHookMarkDicAssociatedObjectKey, hookDic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    NSString *key = [NSString stringWithFormat:@"InstanceHook__%@__%@", NSStringFromClass([target class]), NSStringFromSelector(selector)];
+    
+    NSString *className = NSStringFromClass([target class]);
+    if ([className isEqualToString:[NSStringFromClass([[target class] superclass]) stringByAppendingString:VDHookInstanceSubclassSuffix]]) {
+        className = NSStringFromClass([[target class] superclass]);
+    }
+    
+    NSString *key = [NSString stringWithFormat:@"InstanceHook__%@__%@", className, NSStringFromSelector(selector)];
     BOOL isHooked = [[hookDic objectForKey:key] boolValue];
     return isHooked;
 }
@@ -271,7 +294,13 @@ static char VDHookMarkDicAssociatedObjectKey;
         hookDic = [[NSMutableDictionary alloc] init];
         objc_setAssociatedObject([VDHook sharedInstance], &VDHookMarkDicAssociatedObjectKey, hookDic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    NSString *key = [NSString stringWithFormat:@"InstanceHook__%@__%@", NSStringFromClass([target class]), NSStringFromSelector(selector)];
+    
+    NSString *className = NSStringFromClass([target class]);
+    if ([className isEqualToString:[NSStringFromClass([[target class] superclass]) stringByAppendingString:VDHookInstanceSubclassSuffix]]) {
+        className = NSStringFromClass([[target class] superclass]);
+    }
+    
+    NSString *key = [NSString stringWithFormat:@"InstanceHook__%@__%@", className, NSStringFromSelector(selector)];
     [hookDic setObject:@(YES) forKey:key];
 }
 

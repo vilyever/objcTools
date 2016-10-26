@@ -9,7 +9,7 @@
 #import "VDLoadingView.h"
 #import "objcKeyPath.h"
 
-@interface VDLoadingView ()
+@interface VDLoadingView () <CAAnimationDelegate>
 
 - (void)__i__initVDLoadingView;
 
