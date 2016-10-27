@@ -15,9 +15,9 @@
 
 @dynamic vd_trackHeight;
 
-+ (void)load {
-    method_exchangeImplementations(class_getInstanceMethod(self, @selector(trackRectForBounds:)), class_getInstanceMethod(self, @selector(vd_trackRectForBounds:)));
-}
+//+ (void)load {
+//    method_exchangeImplementations(class_getInstanceMethod(self, @selector(trackRectForBounds:)), class_getInstanceMethod(self, @selector(vd_trackRectForBounds:)));
+//}
 
 #pragma mark Constructor
 
