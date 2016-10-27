@@ -30,13 +30,13 @@
     _keyPath = [keyPath copy];
     _kvoAction = action;
     
-    [_target addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial) context:NULL];
     VDWeakifySelf;
     self.hookedDeallocElement = [_target vd_hookSelector:VDHookDeallocSelector beforeBlock:^(VDHookElement *element, VDHookInvocationInfo *info) {
         VDStrongifySelf;
         [info.invocation.target removeObserver:self forKeyPath:self.keyPath];
         [self dispose];
     }];
+    [_target addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial) context:NULL];
     
     return self;
 }
@@ -53,7 +53,7 @@
 #pragma mark Overrides
 - (instancetype)init {
     self = [super init];
-        
+    
     return self;
 }
 

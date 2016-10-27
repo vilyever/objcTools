@@ -52,15 +52,21 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
     else {
         // dealloc 时取消HOOK,防止KVO崩溃
         if ([NSStringFromSelector(originalSelector) isEqualToString:NSStringFromSelector(VDHookDeallocSelector)]) {
-            [VDHook internalUnswizzleForwardInvocation:object_getClass(target)];
             
-            Class hookClazz = object_getClass(target);
-            Method targetMethod = class_getInstanceMethod(hookClazz, swizzleSelector);
-            const char *typeEncoding = method_getTypeEncoding(targetMethod);
+            if (object_getClass(target) != [target class]) {
+                object_setClass(target, class_getSuperclass(object_getClass(target)));
+            }
             
-            class_replaceMethod(hookClazz, originalSelector, method_getImplementation(targetMethod), typeEncoding);
+            if (class_getInstanceMethod(object_getClass(target), swizzleSelector)) {
+                ( (void (*)(id, SEL) )[target methodForSelector:swizzleSelector] )(target, swizzleSelector);
+            }
+            else if (class_getInstanceMethod(object_getClass(target), originalSelector)) {
+                ( (void (*)(id, SEL) )[target methodForSelector:originalSelector] )(target, originalSelector);
+            }
+            else {
+                NSLog(@"VDHook cannot call dealloc for %@", target);
+            }
             
-            ( (void (*)(id, SEL) )[target methodForSelector:originalSelector] )(target, originalSelector);
             return;
         }
         Class clazz = object_getClass(invocation.target);
@@ -156,7 +162,8 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         SEL swizzleSelector = VDHookGetSwizzleSelector(selector);
         
         if ([hookClazz instancesRespondToSelector:swizzleSelector]) {
-            NSLog(@"Alias method name %@ to hook selctor %@ on %@ is being possessed", NSStringFromSelector(swizzleSelector),  NSStringFromSelector(selector), hookClazz);
+            NSLog(@"VDHook: Alias method name %@ to hook selctor %@ on %@ is being possessed", NSStringFromSelector(swizzleSelector),  NSStringFromSelector(selector), hookClazz);
+            return;
         }
         
         // 原先考虑到Aspects冲突，现发现Category中替换方法后不能使用下述算法。若selector的实现imp为_objc_msgForward,将导致此hook失效，考虑其它解决方案
@@ -176,12 +183,12 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         //            }
         //        }
         
-        NSCAssert(targetMethod, @"Original implementation for %@ cannot find, maybe swizzle by others and no make a alias method on %@", NSStringFromSelector(selector), hookClazz);
+        NSCAssert(targetMethod, @"VDHook: Original implementation for %@ cannot find, maybe swizzle by others and no make a alias method on %@", NSStringFromSelector(selector), hookClazz);
         
         // 增加imp实现为selector的别名方法， selector方法的imp替换为消息转发_objc_msgForward
         const char *typeEncoding = method_getTypeEncoding(targetMethod);
         __unused BOOL added = class_addMethod(hookClazz, swizzleSelector, method_getImplementation(targetMethod), typeEncoding);
-        NSCAssert(added, @"Original implementation for %@ is already copied to %@ on %@", NSStringFromSelector(selector), NSStringFromSelector(swizzleSelector), hookClazz);
+        NSCAssert(added, @"VDHook: Original implementation for %@ is already copied to %@ on %@", NSStringFromSelector(selector), NSStringFromSelector(swizzleSelector), hookClazz);
         
         class_replaceMethod(hookClazz, selector, _objc_msgForward, typeEncoding);
         
@@ -195,10 +202,19 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
     Class baseClass = object_getClass(instance);
     NSString *className = NSStringFromClass(baseClass);
     
+    
+    NSString *willReplaceClassName = [className stringByAppendingString:VDHookInstanceSubclassSuffix];
     // 已经hook成功
-    if ([className hasSuffix:VDHookInstanceSubclassSuffix]) {
-        return baseClass;
-    }
+    Class superClass = baseClass;
+    do {
+        if (superClass == baseClass) {
+            break;
+        }
+        if ([NSStringFromClass(superClass) isEqualToString:willReplaceClassName]) {
+            return superClass;
+        }
+        superClass = [superClass superclass];
+    } while (true);
     
     // kvo或其它工具已经对该instance的class进行过hook，直接使用该hook子类，防止crash
     if (statedClass != baseClass) {
@@ -207,7 +223,7 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
     }
     
     // 创建一个子类，类名为当前类加上后缀
-    const char *subclassName = [className stringByAppendingString:VDHookInstanceSubclassSuffix].UTF8String;
+    const char *subclassName = willReplaceClassName.UTF8String;
     Class subclass = objc_getClass(subclassName);
     
     // 若子类还未声明，动态声明
@@ -216,7 +232,7 @@ static void VDHookedForwardInvocationMethod(__unsafe_unretained NSObject *target
         subclass = objc_allocateClassPair(baseClass, subclassName, 0);
         // 失败
         if (subclass == nil) {
-            NSString *errrorDesc = [NSString stringWithFormat:@"objc_allocateClassPair failed to allocate class %s.", subclassName];
+            NSString *errrorDesc = [NSString stringWithFormat:@"VDHook: objc_allocateClassPair failed to allocate class %s.", subclassName];
             NSLog(@"%@", errrorDesc);
             return nil;
         }
