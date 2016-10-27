@@ -123,8 +123,8 @@
     return result;
 }
 
-+ (void)load {
-    method_exchangeImplementations(class_getInstanceMethod(self, @selector(isEqual:) ), class_getInstanceMethod(self, @selector(vd_isEqual:) ) );
-}
+//+ (void)load {
+//    method_exchangeImplementations(class_getInstanceMethod(self, @selector(isEqual:) ), class_getInstanceMethod(self, @selector(vd_isEqual:) ) );
+//}
 
 @end
