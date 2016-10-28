@@ -27,7 +27,6 @@
 
 - (instancetype)initWithObject:(id)object {
     if (!object) {
-//        NSAssert(NO, @"VDWeakRef cannot init with nil");
         NSLog(@"WeakRef cannot init with nil");
         return nil;
     }
@@ -115,16 +114,70 @@
 
 
 #pragma mark Private Method
-- (BOOL)vd_isEqual:(id)object {
-    id realSelf = [self class]  == [VDWeakRef class] ? ((VDWeakRef *)self).weakObject : self;
-    id realObject =  [object class]  == [VDWeakRef class] ? ((VDWeakRef *)object).weakObject : object;
-    
-    BOOL result = [realSelf vd_isEqual:realObject];
-    return result;
-}
+//- (BOOL)vd_isEqual:(id)object {
+//    id realSelf = [self class]  == [VDWeakRef class] ? ((VDWeakRef *)self).weakObject : self;
+//    id realObject =  [object class]  == [VDWeakRef class] ? ((VDWeakRef *)object).weakObject : object;
+//    
+//    BOOL result = [realSelf vd_isEqual:realObject];
+//    return result;
+//}
 
 //+ (void)load {
 //    method_exchangeImplementations(class_getInstanceMethod(self, @selector(isEqual:) ), class_getInstanceMethod(self, @selector(vd_isEqual:) ) );
 //}
+
+@end
+
+@implementation NSArray (VDWeakRef)
+
+- (NSUInteger)vd_indexOfWeakObject:(id)anObject {
+    NSUInteger index = [self indexOfObject:anObject];
+    if (index == NSNotFound) {
+        for (NSUInteger i = 0; i < self.count; i++) {
+            if ([[self objectAtIndex:i] isEqual:anObject]) {
+                index = i;
+                break;
+            }
+        }
+    }
+    
+    return index;
+}
+
+- (BOOL)vd_containsWeakObject:(id)anObject {
+    BOOL result = [self containsObject:anObject];
+    if (!result) {
+        for (NSUInteger i = 0; i < self.count; i++) {
+            if ([[self objectAtIndex:i] isEqual:anObject]) {
+                result = YES;
+                break;
+            }
+        }
+    }
+    
+    return result;
+}
+
+
+@end
+
+@implementation NSMutableArray (VDWeakRef)
+
+- (void)vd_addWeakObject:(id)anObject {
+    [self addObject:[anObject vd_weakRef]];
+}
+
+- (void)vd_insertWeakObject:(id)anObject atIndex:(NSUInteger)index {
+    [self insertObject:[anObject vd_weakRef] atIndex:index];
+}
+
+- (void)vd_removeWeakObject:(id)anObject {
+    if ([self containsObject:anObject]) {
+        [self removeObject:anObject];
+    }
+    else if ([self vd_containsWeakObject:anObject]) {
+        [self removeObjectAtIndex:[self vd_indexOfWeakObject:anObject]];
+    }
+}
 
 @end

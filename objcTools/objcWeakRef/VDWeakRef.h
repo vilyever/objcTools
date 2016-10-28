@@ -47,3 +47,19 @@
 #pragma mark Private Method
 
 @end
+
+@interface NSArray (VDWeakRef)
+
+- (NSUInteger)vd_indexOfWeakObject:(id)anObject;
+- (BOOL)vd_containsWeakObject:(id)anObject;
+
+
+@end
+
+@interface NSMutableArray (VDWeakRef)
+
+- (void)vd_addWeakObject:(id)anObject;
+- (void)vd_insertWeakObject:(id)anObject atIndex:(NSUInteger)index;
+- (void)vd_removeWeakObject:(id)anObject;
+
+@end
